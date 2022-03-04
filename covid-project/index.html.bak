@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Index</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--favicon-->
+      <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+      <!-- ! css Begin-->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" type="text/css" href="css/screen.css">
+      <!-- ! css ends -->
+      <!-- ! Custom fonts Begin -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <!-- ! Custom fonts end -->
+      <!-- FontAwsome -->
+      <script src="https://kit.fontawesome.com/5336317b7a.js" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <header class="indexbannerImg coverbg">
+         <div class="topHeaderWrapper">
+            <div class="container">
+               <div class="topHeader d-flex align-items-center justify-content-between">
+                  <a href="index.html">
+                     <div class="logo">
+                        <img src="images/logo-white.png" alt="Logo" class="loginLogo">
+                     </div>
+                  </a>
+                  <div class="d-flex justify-content-end align-items-center">
+                     <div class="mobile-button mobile-button-open"> <span class="line"></span> <span class="line"></span> <span class="line"></span> </div>
+                  <div class="menuBtn d-flex align-items-center">
+                     <div class="menuList">
+                        <ul>
+                           <li>
+                              <a href="contact.html">Quick Inquery</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="tryBtn ml-sm-3 ml-2">
+                        <a href="login.html" class="primary-btn">Login</a>
+                     </div>
+                  </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="indexBanner">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-md-6 col-xl-5 col-sm-9">
+                     <div class="bannerText">
+                        <h1 class="text-white">We help you to track your covid status</h1>
+                        <p class="text-white">One step towards to a helapty life</p>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-xl-7">
+                     <div class="bannerImg">
+                        <img src="images/app-screen.png">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="sectionPadding aboutSection">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-5 col-xl-6">
+                  <div class="aboutImg">
+                     <img src="images/about-screen.png">
+                  </div>
+               </div>
+               <div class="col-md-7 col-xl-6">
+                  <div class="pageTitle">
+                     <h5>Introducing Covid Track </h5>
+                     <h2>The New Way To Keep Track Of Your Health</h2>
+                  </div>
+                  <p>As COVID-19 Pandemic continues to impact our lives, we have to put together our efforts to stay clam and stay healthy.</p>
+                  <div class="row">
+                     <div class="col-xl-6 mb-3 mb-xl-0">
+                        <div class="d-flex">
+                           <div class="aboutIcon">
+                              <i class="far fa-edit"></i>
+                           </div>
+                           <div class="aboutText">
+                              <h5>Easy Process</h5>
+                              <p>Provide the required data and get the instant result</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-6">
+                        <div class="d-flex">
+                           <div class="aboutIcon">
+                              <i class="fas fa-cog"></i>
+                           </div>
+                           <div class="aboutText">
+                              <h5>Great Features</h5>
+                              <p>Advanced features with latest devices synced to get the latest health tips</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- <section class="videoBanner coverbg">
+         <div class="container h-100">
+            <div class="sectionPadding h-100">
+               <div class="d-flex align-items-center justify-content-center flex-column h-100">
+                  <a href="#" class="videoBtn"><img src="images/video-btn.png"></a>
+                  <h3 class="text-white">Watch Video</h3>
+               </div>
+            </div>
+         </div>
+      </section> -->
+      <section class="videoBanner coverbg">
+         <div class="video-wrapper" style="height: inherit;width: inherit">
+                     <iframe src="https://www.youtube.com/embed/s0t1JISINO0?autoplay=1&mute=1" style="height: inherit;width: inherit"></iframe>
+                  </div>
+      </section>
+      <section class="secrvicesSection sectionPadding text-center">
+         <div class="container">
+            <div class="pageTitle pageTitleCenter">
+               <h2>Required Key Information</h2>
+            </div>
+            <p class="text-center">Make things easy – that’s our mission</p>
+            <div class="serviceBlockWrapper">
+               <div class="row">
+                  <div class="col-md-4 col-sm-6 mb-2">
+                     <div class="serviceBlock">
+                        <div class="serviceIcon">
+                           <img src="images/service-icon/services-1.png">
+                        </div>
+                        <h5>Medical Status</h5>
+                        <p>Get started with your personal medical care and status to improve.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 mb-2">
+                     <div class="serviceBlock">
+                        <div class="serviceIcon">
+                           <img src="images/service-icon/services-2.png">
+                        </div>
+                        <h5>Travel History</h5>
+                        <p>Tell us about your recent travels to predict the future.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 mb-2">
+                     <div class="serviceBlock">
+                        <div class="serviceIcon">
+                           <img src="images/service-icon/services-3.png">
+                        </div>
+                        <h5>Lunch Out</h5>
+                        <p>Keep note of your out lunch plans to get to know you better.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 mb-2">
+                     <div class="serviceBlock">
+                        <div class="serviceIcon">
+                           <img src="images/service-icon/services-4.png">
+                        </div>
+                        <h5>Meetups</h5>
+                        <p>Have you met any of your friends/Relatives?</p>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 mb-2">
+                     <div class="serviceBlock">
+                        <div class="serviceIcon">
+                           <img src="images/service-icon/services-5.png">
+                        </div>
+                        <h5>Covid Symptoms</h5>
+                        <p>Let us know how you feel with symptoms and we will provide the observations.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 mb-2">
+                     <div class="serviceBlock">
+                        <div class="serviceIcon">
+                           <img src="images/service-icon/services-6.png">
+                        </div>
+                        <h5>Previous Records</h5>
+                        <p>Keep track of all your previous records to have a new one.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="resultSection sectionPadding">
+         <div class="container">
+            <div class="pageTitle noborder">
+               <h2 class="text-white">User Counts/Results</h2>
+            </div>
+            <div class="resultBlockWrapper">
+               <div class="row">
+                  <div class="col-md-4 mb-3 mb-md-0">
+                     <div class="resultBlock">
+                        <!-- <div class="resultIcon">
+                           <i class=" fas fa-chart-pie"></i>
+                        </div> -->
+                        <h3>50</h3>
+                        <h4>Total Users</h4>
+                        <p>More than 40 users belive in us and join us in the fight of this pandemic.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+                     <div class="resultBlock">
+                        <!-- <div class="resultIcon">
+                           <i class=" fas fa-signal"></i>
+                        </div> -->
+                        <h3>80%</h3>
+                        <h4>Success Rate</h4>
+                        <p>We can predict the correct outcomes based on provided information with the success rate of 80%.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="resultBlock">
+                        <!-- <div class="resultIcon">
+                           <i class="fas fa-tachometer-alt"></i>
+                        </div> -->
+                        <h3>100%</h3>
+                        <h4>Privacy</h4>
+                        <p>User data privacy is of upmost importance to us.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section class="testimonialSection sectionPadding">
+         <div class="container">
+            <div class="pageTitle pageTitleCenter">
+               <h2>FAQs</h2>
+            </div>
+            <p class="text-center">Learn more about common queries</p>
+            <div class="testimonialWrapper">
+               <div class="owl-carousel owl-theme testimonialSlider">
+                  <div class="item">
+                     <div class="testimonialBlock text-center">
+                        <div class="clientImg coverbg" style="background-image: url('images/client.png')"></div>
+                        <h3>Question1</h3>
+                        <p>Answer1</p>
+                        <div class="rating">
+                           <img src="images/stars.png">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="testimonialBlock text-center">
+                        <div class="clientImg coverbg" style="background-image: url('images/client.png')"></div>
+                        <h3>Question2</h3>
+                        <p>Answer2</p>
+                        <div class="rating">
+                           <img src="images/stars.png">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="testimonialBlock text-center">
+                        <div class="clientImg coverbg" style="background-image: url('images/client.png')"></div>
+                        <h3>Question3</h3>
+                        <p>Answer3</p>
+                        <div class="rating">
+                           <img src="images/stars.png">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="testimonialBlock text-center">
+                        <div class="clientImg coverbg" style="background-image: url('images/client.png')"></div>
+                        <h3>David Palmer</h3>
+                        <p>Canada</p>
+                        <p>"My account was mistakenly blocked and I wasn’t getting anywhere with the appeal process. Thankfully Unblock Insta managed to get my account back up and running."</p>
+                        <div class="rating">
+                           <img src="images/stars.png">
+                        </div>
+                     </div>
+                  </div>   
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer class="footerSection">
+         <div class="go-top">
+            <img src="images/top-btn.png">
+         </div>
+         <!-- <div class="container">
+            <div class="row">
+               <div class="col-xl-3 mb-4 mb-xl-0">
+                  <div class="footerLogo">
+                     <img src="images/logo-white.png">
+                  </div>
+                  <p>We’re on a mission to build a better future where technology creates good jobs for everyone.</p>
+               </div>
+               <div class="col-lg-2 col-4">
+                  <h5>Contact</h5>
+                  <ul>
+                     <li>
+                        <a href="#">Sign Up</a>
+                     </li>
+                     <li>
+                        <a href="#">Loging in</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div> -->
+
+         <div class="subfooter">
+            <div class="container">
+               <div class="container">
+                  <div class="row align-items-end">
+                     <div class="col-6">
+                        <p>Copyright 2020 Unblock Insta All Right Reserved </p>
+                     </div>
+                     <div class="col-6">
+                        <ul class="d-flex ml-auto">
+                           <li>
+                              <a href="signup.html">Sign Up</a>
+                           </li>
+                           <li class="ml-3">
+                              <a href="login.html">Loging in</a>
+                           </li>
+                           <li class="ml-3">
+                              <a href="contact.html">Quick Inquery</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <!-- ! Script Begin -->
+     <!--  <script src="js/jquery-2.2.4.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script> -->
+      <script src="js/function.js"></script>
+      <script src="js/global.js"></script>
+      <!-- ! Script ends -->
+   </body>
+</html>
