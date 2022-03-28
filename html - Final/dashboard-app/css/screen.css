@@ -1,0 +1,269 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/***************************************************************************************
+GENERAL LAYOUT GUIDELINES   
+LAYOUT WIDTH :1200px    
+FONT: sans-serif
+font-family: 'Muli', sans-serif;
+Available Weights: 400, 500, 600, 700, 800
+***************************************************************************************/
+
+/* ! GENERAL START */
+
+/*This section is use for reset CSS.*/
+*, * * { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
+body { background: #fff; font-family: 'Poppins', sans-serif; font-size: 13px; line-height: 28px; font-weight: 400; color: #555555; letter-spacing: 0.5px; cursor: default; overflow-x: hidden; }
+html { overflow-x: hidden; }
+a { color: #e9b516; text-decoration: none; transition: color 0.3s ease 0s; }
+a:hover { color: #DD2839; }
+a:link { cursor: pointer; }
+a:hover, a:focus { outline: 0; text-decoration: none; }
+:focus { outline: 0; }
+a[href^="tel:"], .no-touchevents a[href^="tel:"]:hover { color: inherit; }
+p { margin-bottom: 20px; line-height: 22px; }
+p:last-child { margin-bottom: 0; }
+b, strong { font-weight: 700; }
+hr { height: 1px; background: #929292; }
+svg { max-width: 100%; transition: fill 0.3s ease 0s; }
+svg .oval, svg .icon { transition: fill 0.3s ease 0s, stroke 0.3s ease 0s; }
+.no-touchevents a:hover svg .icon { fill: #fff; }
+img { margin: 0 auto; max-width: 100%; height: auto; display: inline-block; border: none;/* width: 100%; */ }
+.cover-bg { background-size: cover; background-position: center; background-repeat: no-repeat; }
+button:focus { outline: none; border: 0; }
+
+/* ! HEADINGS START */
+
+/* This section is use for all heading tag default CSS. */
+h1, h2, h3, h4, h5, h6 { font-weight: 600; margin: 0 0 10px; line-height: 1.1; }
+h1 { font-size: 30px; margin-bottom: 15px; }
+h2 { font-size: 20px; font-weight: 700; margin-bottom: 13px; }
+h3 { font-size: 14px; }
+h4 { font-size: 15px; }
+h5 { font-size: 15px; }
+h6 { font-size: 14px; }
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child { margin-bottom: 0; }
+
+/* Headings end */
+
+/* Default Ul and Ol start */
+ul { margin-left: 0; }
+ol { margin-left: 5px; }
+ul:last-child, ol:last-child { margin-bottom: 0; }
+ul li { list-style: none; }
+ul > li {margin-left: 5px;padding-left: 10px;}
+ol > li { margin-left: 10px; padding-left: 20px; }
+ul > li:before {position: absolute;top: 10px;left: -7px;width: 6px;height: 6px;content: " ";background-color: #555555;border-radius: 50%;}
+ul.no-bullet > li:before { content: none; }
+.list-alphabet li:before { content: none; }
+.list-alphabet li { padding-left: 0; margin-left: 0; }
+.rotate-icon { transform: rotate(270deg); display: inline-block; float: right; transition: 0.3s ease all; }
+.collapsed .rotate-icon { transform: rotate(90deg); }
+
+/* Default Ul and Ol end */
+
+/* ! FORM CSS START */
+
+/*This section is use for all default form elements CSS.*/
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="url"], input[type="password"], textarea, select { border: 0; border: 1px solid #d3d3d3; padding: 8px; border-radius: 5px;/*  color: #fff; *//* width: 100%; */	/* line-height: 1.2; */font-weight: 400; outline: none; background: transparent; transition: border 0.3s ease 0s; -webkit-transition: border 0.3s ease 0s;/*  -webkit-appearance: none; -moz-appearance: none; */ }
+textarea { width: 100% !important; overflow-y: auto; min-height: 80px; }
+select {position: relative;width: 100%;color: initial;}
+.get-started-section textarea { min-height: 50px; }
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus, input[type="password"]:focus, select:focus { border-color: #000 !important; outline: 0; box-shadow: none; }
+::placeholder {	/* Chrome, Firefox, Opera, Safari 10.1+ */
+color: #555555; opacity: 1; /* Firefox */ }
+:-ms-input-placeholder {	/* Internet Explorer 10-11 */
+color: #555555; }
+::-ms-input-placeholder {	/* Microsoft Edge */
+color: #555555; }
+input[type=checkbox] + label { display: block; margin: 0.2em; cursor: pointer; padding: 0.2em; }
+input[type=checkbox] { display: none; }
+input[type=checkbox] + label:before { content: "\2714"; border: 1px solid #000; border-radius: 2px; display: inline-block; width: 15px; height: 15px; padding-left: 0; padding-bottom: 13px; margin-right: 10px; vertical-align: baseline; color: transparent; transition: .2s; font-size: 12px; text-align: center; line-height: 15px; }
+input[type=checkbox] + label:active:before { transform: scale(0); }
+input[type=checkbox]:checked + label:before {	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1de9b6+0,1dc4e9+100 */
+background: #1de9b6; /* Old browsers */ background: -moz-linear-gradient(top, #1de9b6 0%, #1dc4e9 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #1de9b6 0%, #1dc4e9 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #1de9b6 0%, #1dc4e9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1de9b6', endColorstr='#1dc4e9', GradientType=0); /* IE6-9 */ border-color: MediumSeaGreen; color: #fff; }
+input[type=checkbox]:disabled + label:before { transform: scale(1); border-color: #aaa; }
+input[type=checkbox]:checked:disabled + label:before { transform: scale(1); background-color: #bfb; border-color: #bfb; }
+.form-label { position: absolute; top: 3px; left: 0; background: #fff; transition: top 0.3s ease 0s, bottom 0.3s ease 0s, font-size 0.3s ease 0s; font-size: 14px; color: #8e8e8e; }
+.subscription-form .form-label { left: 15px; }
+.form-label.up { top: -18px; font-size: 12px; }
+.form-group { margin-bottom: 30px; }
+.form-group:last-child { margin-bottom: 0; }
+.form-title { padding-bottom: 35px; }
+.form-title h4 { font-weight: 700; }
+.subscription-form .field-validation-error, .subscription-form .approve-box .field-validation-error span, .unsubsribe-page .field-validation-error { left: 15px; display: none; }
+.form-input.input-validation-error, .form-input.input-validation-error-captcha, .input-validation-error .select2-selection.select2-selection--single { border-color: #b82e27 !important; }
+.get-started-section .checkmark { height: 18px; width: 18px; }
+.get-started-section .radio-container .checkmark:after { left: 6px; top: 1px; width: 5px; height: 12px; }
+.small-icon { font-size: 14px; }
+.dropdown-item { padding: 3px 15px; font-size: 14px; }
+
+/* Form CSS End */
+
+/* ! FONT ELLO CSS STARTS */
+[class^="icon-"]:before, [class*=" icon-"]:before { margin-right: 0; margin-left: 0; }
+
+/* ! FONT ELLO CSS ENDS */
+
+/* ! COMMON CSS STARTS */
+.text-green { color: #8bc34a; }
+.text-blue { color: #00bcd4; }
+.text-purple { color: #a767dd; }
+.text-darkblue { color: #1d89cf; }
+.back-green { background-color: #8bc34a !important; }
+.back-blue { background-color: #00bcd4 !important; }
+.back-purple { background-color: #a767dd !important; }
+.back-darkblue { background-color: #1d89cf !important; }
+.text-white { color: #fff; }
+.section-padding { padding: 80px 0; }
+.coverbg { background-size: cover; background-position: center; background-repeat: no-repeat; }
+.title-white { position: relative; }
+.title-white:after, .title-white:before { background-color: #fff; }
+.down-arrow { transform: rotate(90deg); display: inline-block; }
+.social-links li:before, .footer-links ul li:before { content: none; }
+.bg-custom-danger{background-color: #ffd2d2 !important;}
+.bg-custom-success{background-color: #e1ffce !important;}
+
+/* This section is use for Common button style. */
+.primary-btn { cursor: pointer; border: 0; color: #fff; text-transform: uppercase; border-radius: 20px; line-height: 1; padding: 15px 15px; font-weight: 600; letter-spacing: 3px; transition: 0.3s ease all; font-size: 14px; display: inline-block;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f99505+0,ecaf13+100 */ background: #f99505; /* Old browsers */ background: -moz-linear-gradient(left, #f99505 0%, #ecaf13 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, #f99505 0%, #ecaf13 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, #f99505 0%, #ecaf13 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f99505', endColorstr='#ecaf13', GradientType=1); /* IE6-9 */ }
+.primary-btn:hover {	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ecaf13+0,f99505+100 */background: #ecaf13; /* Old browsers */ background: -moz-linear-gradient(left, #ecaf13 0%, #f99505 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, #ecaf13 0%, #f99505 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, #ecaf13 0%, #f99505 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecaf13', endColorstr='#f99505', GradientType=1); /* IE6-9 */ }
+.secondary-btn { background-color: #1B4777; border: 1px solid #1B4777; color: #fff; text-transform: uppercase; border-radius: 4px; line-height: 1; padding: 14px 15px; font-weight: bold; font-size: 12px; transition: 0.3s ease all; font-size: 1.02em; display: inline-block; }
+.secondary-btn:hover { background-color: #fff; color: #1B4777; }
+.buttonDark { cursor: pointer; border: 0; color: #fff; text-transform: uppercase; border-radius: 5px; line-height: 1; padding: 10px 22px; transition: 0.3s ease all; font-size: 12px; display: inline-block;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f99505+0,ecaf13+100 */ background-color: #1d2c37; /* Old browsers */ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* FF3.6-15 */	/* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ /* IE6-9 */ }
+.customCard { background-color: #fff; border-radius: 5px; padding: 15px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05); }
+
+/* Common Button CSS Ends */
+
+/* Dashboard page Css Start */
+.dashboardScreenWrapper { min-height: 100vh; height: 100%; }
+.mainMenuWrapper { width: 0; background-color: #f1f1f1; transition: 0.3s ease all; position: relative; left: 0; }
+.mainMenuWrapper.open-menu { width: 120px; text-align: center; font-size: 12px; line-height: 20px; left: 0; }
+.logoIcon { display: none; }
+.logo a.logoIcon { display: block; max-width: 38px; margin-left: auto; margin-right: auto; }
+.logo a.fullLogo { display: none; }
+.mainMenuWrapper.open-menu .logo a.fullLogo { display: none; }
+.mainMenuWrapper.open-menu .logo a.logoIcon { display: block; }
+.logo a { display: block; max-width: 250px; margin: 20px 15px; }
+.menuIcon { position: absolute; right: -40px; z-index: 1; font-size: 25px; top: 20px; }
+.menuIcon a { color: initial; }
+.menulist li a { color: #0d4f67; display: block; padding: 10px 15px; }
+.menulist li a i { display: block; }
+.menulist li { padding: 0; margin: 0; }
+.menulist li:before { content: none; }
+.menulist li a:hover, .menulist li a.active { background-color: #00929e; color: #fff; }
+.mainMenuWrapper.open-menu .menulist i { display: block; margin-bottom: 5px; }
+.contentPart { width: 100%; background-color: #ffffff; transition: 0.3s ease all; flex: 0 0 auto; }
+.contentPart.open-menu-content { width: 100%; }
+.contentPart .header { background-color: #ffffff;/* box-shadow: 0px 2px 0px rgb(0 0 0 / 20%); */ padding: 20px 15px 20px 70px; border-bottom: 2px solid #e1e1e1; }
+.searchbox { background-color: #f3f3f3; width: 280px; display: block; border-radius: 30px; margin-bottom: 15px; }
+.searchbox .has-search { display: flex; align-items: center; }
+.searchbox .has-search  .form-control { color: #8a9298; font-size: 13px; padding: 9px 30px 9px 9px; border: 0; }
+.searchbox .has-search  .form-control:focus { background-color: transparent; }
+.searchbox .has-search .form-control-feedback { font-size: 12px; position: absolute; right: 10px; color: #959595; }
+.header .dropdown-toggle { color: initial; margin: 0 15px; }
+.calenderNotification { margin: 0 10px; position: relative; }
+.calenderNotification .notificationBtn { background-color: #f00; color: #fff; border-radius: 50%; height: 16px; width: 16px; font-size: 10px; display: inline-block; line-height: 16px; text-align: center; position: absolute; right: -11px; top: -5px; }
+.calenderNotification i { font-size: 18px; }
+.calenderNotification a { color: initial; }
+.userIcon { height: 30px; width: 30px; border-radius: 50%; overflow: hidden; }
+.userProfileicon { margin: 0 0 0 15px; }
+.userstatus { background-color: #36b844; height: 10px; width: 10px; border-radius: 50%; border: 2px solid #fff; position: absolute; right: 0; bottom: 0; }
+.userDetails span:first-child { width: 150px; display: inline-block; }
+
+/* Dashboard page Css End   */
+
+/* Title */
+.title { padding: 20px 15px;/* border-bottom: 2px solid #e1e1e1; */ }
+.title h1 { color: #555; font-weight: 400; margin-bottom: 5px; }
+.title h2 { color: #cbcbcb; font-weight: 400; }
+.appContentMain { margin: 30px 15px; }
+.shorcutCardSection, .noteSection, .referralLinkSection { margin-top: 30px; }
+.statisicBlock { background-color: #fff; padding: 15px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);	/* height: 100%; */ }
+.statisicBlock .progress { height: 5px; margin-bottom: 10px; }
+.statisicBlock .progress .progress-bar {	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1dc4e9+0,1de9b6+100 */
+background: #1dc4e9; /* Old browsers */ background: -moz-linear-gradient(left, #1dc4e9 0%, #1de9b6 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, #1dc4e9 0%, #1de9b6 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, #1dc4e9 0%, #1de9b6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1dc4e9', endColorstr='#1de9b6', GradientType=1); /* IE6-9 */ }
+.statisicBlockVaue p { margin-bottom: 12px; }
+.statisicBlockVaue p.small-text { font-size: 12px; color: #cbcbcb; }
+.shorcutCard { background-color: #00bcd4; border-radius: 5px; color: #fff; padding: 15px 15px 55px; height: 100%; }
+.shorcutCard a { margin-top: auto; position: absolute; bottom: 15px; }
+.shorcutCard p { margin-bottom: 10px; }
+.notecard { background-color: #fff; border-radius: 5px; padding: 14px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05); }
+.referralLinkSection { background-color: #fff; border-radius: 5px; padding: 25px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05); }
+.customCard .title { margin: 0 -15px 30px; padding: 5px 15px 15px 15px; }
+.profileForm .form-group:last-child { margin-bottom: 20px; }
+.referralLinkSection p span:first-child { min-width: 190px; display: inline-block; }
+.appContentMain .editPrifle { position: absolute; right: 15px; top: 10px; color: #00929e; z-index: 1; }
+.appContentMain .editPrifle a { color: inherit; background-color: #fff; padding: 3px 6px; display: inline-block; line-height: 1; border-radius: 3px; border: 1px solid #00929e; }
+.appContentMain .editPrifle a:hover { background-color: #00929e; color: #fff; }
+
+/***************************************************************************************
+*MEDIA QUERY FOR DEVICE WIDTH MORE THEN 768px STARTS
+***************************************************************************************/
+@media screen and (min-width:768px) {
+	h1, h2, h3, h4, h5, h6 { margin: 0 0 20px; }
+	h3 { font-size: 18px; }
+	.menuIcon { right: -60px; }
+	.title { padding: 20px 30px; }
+	.appContentMain { margin: 50px 30px; }
+	.userProfileicon { margin: 0 15px; }
+	.contentPart .header { padding: 19px 15px; }
+	.searchbox { width: 320px; display: inline-block; margin-bottom: 0; flex-grow: initial; }
+	.shorcutCardSection, .noteSection, .referralLinkSection { margin-top: 40px; }
+	.shorcutCard { padding: 15px 15px 65px; }
+}
+
+/***************************************************************************************
+*MEDIA QUERY FOR DEVICE WIDTH MORE THEN 992 STARTS
+***************************************************************************************/
+@media screen and (min-width:992px) {
+	body { font-size: 14px; }
+	h1 { font-size: 36px; }
+	h2 { font-size: 25px; }
+	h3 { font-size: 26px; }
+	h4 { font-size: 20px; }
+	h5 { font-size: 18px; }
+	h6 { font-size: 16px; }
+	.buttonDark { padding: 15px 20px; font-size: 15px; }
+	.title h1 { margin-bottom: 10px; }
+	.mainMenuWrapper { width: 25%; left: auto; position: relative; height: auto; }
+	.contentPart { width: 76%; left: auto; position: relative; }
+	.calenderNotification { margin: 0 15px; position: relative; }
+	.searchbox { width: 380px; }
+	.header .dropdown-toggle { margin: 0 25px; }
+	.menulist li a i { display: inline-block; margin-right: 6px; }
+	.logo a.fullLogo { display: block; }
+	.logo a.logoIcon { display: none; }
+	.mainMenuWrapper.open-menu { width: 120px; text-align: center; font-size: 12px; line-height: 20px; left: 0; }
+	.contentPart { flex: 0 0 1; }
+	.contentPart.open-menu-content { width: calc(100% - 120px); }
+	.shorcutCardSection, .noteSection, .referralLinkSection { margin-top: 50px; }
+
+	/* 		
+		.contentPart.open-menu-content { left: 0; }
+		.menulist{display: block;}
+		 */ }
+
+	/***************************************************************************************
+	*MEDIA QUERY FOR DEVICE WIDTH MORE THEN 1024 STARTS
+	***************************************************************************************/
+	@media screen and (min-width:1024px) { }
+
+	/***************************************************************************************
+	*MEDIA QUERY FOR DEVICE WIDTH MORE THEN 1200 STARTS
+	***************************************************************************************/
+	@media screen and (min-width:1200px) {
+		.mainMenuWrapper { width: 20%; }
+		.contentPart { width: 80%; }
+	}
+	@media screen and (min-width:1199px) { }
+
+	/***************************************************************************************
+	*MEDIA QUERY FOR DEVICE WIDTH MORE THEN 1300 STARTS
+	***************************************************************************************/
+	@media screen and (min-width:1300px) { }
+
+	/***************************************************************************************
+	*MEDIA QUERY FOR DEVICE WIDTH MORE THEN 1366 STARTS
+	***************************************************************************************/
+	@media screen and (min-width:1366px) { }
