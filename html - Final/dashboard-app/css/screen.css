@@ -124,6 +124,7 @@ input[type=checkbox]:checked:disabled + label:before { transform: scale(1); back
 .social-links li:before, .footer-links ul li:before { content: none; }
 .bg-custom-danger{background-color: #ffd2d2 !important;}
 .bg-custom-success{background-color: #e1ffce !important;}
+.bg-custom-warning {background-color: #f7f0dd !important;}
 
 /* This section is use for Common button style. */
 .primary-btn { cursor: pointer; border: 0; color: #fff; text-transform: uppercase; border-radius: 20px; line-height: 1; padding: 15px 15px; font-weight: 600; letter-spacing: 3px; transition: 0.3s ease all; font-size: 14px; display: inline-block;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f99505+0,ecaf13+100 */ background: #f99505; /* Old browsers */ background: -moz-linear-gradient(left, #f99505 0%, #ecaf13 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, #f99505 0%, #ecaf13 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, #f99505 0%, #ecaf13 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f99505', endColorstr='#ecaf13', GradientType=1); /* IE6-9 */ }
