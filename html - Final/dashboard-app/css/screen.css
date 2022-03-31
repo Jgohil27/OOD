@@ -63,10 +63,23 @@ ul.no-bullet > li:before { content: none; }
 
 /* Default Ul and Ol end */
 
-/* ! FORM CSS START */
+/* Device Section start */
+.class-device {	background-color: #f1f4f4;	border-radius: 5px;	padding: 14px;	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);}
+/* Device Section end */
 
+/* ! FORM CSS START */
 /*This section is use for all default form elements CSS.*/
-input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="url"], input[type="password"], textarea, select { border: 0; border: 1px solid #d3d3d3; padding: 8px; border-radius: 5px;/*  color: #fff; *//* width: 100%; */	/* line-height: 1.2; */font-weight: 400; outline: none; background: transparent; transition: border 0.3s ease 0s; -webkit-transition: border 0.3s ease 0s;/*  -webkit-appearance: none; -moz-appearance: none; */ }
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="url"], input[type="password"], textarea, select {
+	border: 0;
+	border: 1px solid #d3d3d3;
+	padding: 8px;
+	border-radius: 5px; /*  color: #fff; */ /* width: 100%; */ /* line-height: 1.2; */
+	font-weight: 400;
+	outline: none;
+	background: transparent;
+	transition: border 0.3s ease 0s;
+	-webkit-transition: border 0.3s ease 0s; /*  -webkit-appearance: none; -moz-appearance: none; */
+}
 textarea { width: 100% !important; overflow-y: auto; min-height: 80px; }
 select {position: relative;width: 100%;color: initial;}
 .get-started-section textarea { min-height: 50px; }
