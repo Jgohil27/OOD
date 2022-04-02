@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kalya\\source\\repos\\OOD\\OOD\\OOD.csproj": {}
+    "C:\\new_grad\\spring_sem\\ood\\ood project jainee\\git\\OOD\\OOD\\OOD\\OOD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kalya\\source\\repos\\OOD\\OOD\\OOD.csproj": {
+    "C:\\new_grad\\spring_sem\\ood\\ood project jainee\\git\\OOD\\OOD\\OOD\\OOD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kalya\\source\\repos\\OOD\\OOD\\OOD.csproj",
+        "projectUniqueName": "C:\\new_grad\\spring_sem\\ood\\ood project jainee\\git\\OOD\\OOD\\OOD\\OOD.csproj",
         "projectName": "OOD",
-        "projectPath": "C:\\Users\\kalya\\source\\repos\\OOD\\OOD\\OOD.csproj",
+        "projectPath": "C:\\new_grad\\spring_sem\\ood\\ood project jainee\\git\\OOD\\OOD\\OOD\\OOD.csproj",
         "packagesPath": "C:\\Users\\kalya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kalya\\source\\repos\\OOD\\OOD\\obj\\",
+        "outputPath": "C:\\new_grad\\spring_sem\\ood\\ood project jainee\\git\\OOD\\OOD\\OOD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
