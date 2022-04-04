@@ -1,0 +1,190 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@{
+    ViewData["Title"] = "CovidHighRisk";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--favicon-->
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+    <!-- ! css Begin-->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" type="text/css" href="css/screen.css">
+    <!-- ! css ends -->
+    <!-- ! Custom fonts Begin -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- ! Custom fonts end -->
+    <!-- FontAwsome -->
+    <script src="https://kit.fontawesome.com/5336317b7a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="dashboardScreenWrapper d-flex">
+        <div class="mainMenuWrapper mainequalheight">
+            <div class="menuIcon">
+                <a href="javascript:void(0)"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="logo">
+                <a href="#" class="fullLogo"><img src="images/logo.png" title="Unblock Insta"></a>
+                <a href="#" class="logoIcon"><img src="images/logo-icon.png" title="Unblock Insta"></a>
+
+            </div>
+            <div class="menulist">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="profile.html"><i class="fas fa-border-all"></i> My Profile</a>
+                    </li>
+                    <li>
+                        <a href="form.html"><i class="far fa-file"></i> New Form</a>
+                    </li>
+                    <li>
+                        <a href="../login.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contentPart mainequalheight">
+            <div class="header d-flex justify-content-end align-items-center flex-wrap flex-md-nowrap">
+                <div class="calenderNotification">
+                    <a href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="notificationBtn">10</span>
+                    </a>
+                </div>
+                <div class="userProfileicon">
+                    <div class="userIcon coverbg" style="background-image: url('images/user-img.png')"></div>
+                    <div class="userstatus"></div>
+                </div>
+            </div>
+            <div class="title">
+                <h1>Dashboard</h1>
+                <h2>Dashboard & statistics</h2>
+            </div>
+            <div class="appContentMain">
+                <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0  mb-lg-3 mb-xl-0">
+                        <div class="notecard">
+                            <div class="editPrifle">
+                                <a href="profile.html">Edit</a>
+                            </div>
+                            <h5 class="text-blue">User Profile <span></span></h5>
+                            <div class="userDetails">
+                                <p class="mb-3"><span class="mr-2"><strong>First Name</strong></span><span>Your First Name</span></p>
+                                <p class="mb-3"><span class="mr-2"><strong>Last Name</strong></span><span>Your Last Name</span></p>
+                                <p class="mb-3"><span class="mr-2"><strong>Email</strong></span><span>Your Email</span></p>
+                                <p class="mb-3"><span class="mr-2"><strong>Contact Number</strong></span><span>Yout contact info</span></p>
+                                <p class="mb-3"><span class="mr-2"><strong>Date of Birth</strong></span><span>Your DOB</span></p>
+                                <p class="mb-3"><span class="mr-2"><strong>State of living</strong></span><span>Your State</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 mb-3 mb-md-0  mb-lg-3 mb-xl-0">
+                        <div class="class-device">
+                            <h5 class="text-blue">Device Management<span></span></h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="notecard">
+                                        <div class="editPrifle">
+                                            <a href="#">Edit</a>
+                                        </div>
+                                        <div class="userDetails">
+                                            <p>
+                                                <i class="fa fa-mobile" style="font-size:38px;"> </i> <span style="font-size:16px;">Iphone2211</span>
+                                            </p>
+                                            <p>Last Synced:03/22/2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3 mb-md-0  mb-lg-3 mb-xl-0">
+                                    <div class="notecard">
+                                        <div class="editPrifle">
+                                            <a href="#">Edit</a>
+                                        </div>
+                                        <div class="userDetails">
+                                            <p>
+                                                <i class="fa fa-mobile" style="font-size:38px;"> </i> <span style="font-size:16px;">Fitbit2010</span>
+                                            </p>
+                                            <p>Last Synced:03/22/2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5></h5>
+                                <div class="col-sm-12 align-self-end text-md-right" style="margin-top:70px; ">
+                                    <button type="submit" class="buttonDark">Add Wearables</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="referralLinkSection ">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="text-blue">Last 10 records <span></span></h5>
+                        </div>
+                        <div class="col-12">
+                            <table class="table table-striped tdcenterValue large-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th class="text-uppercase"><i></i>Date</th>
+                                        <th class="text-uppercase"><i></i>Had any covid symptoms</th>
+                                        <th class="text-uppercase"><i></i>Temperature</th>
+                                        <th class="text-uppercase"><i></i>Had met anyone</th>
+                                        <th class="text-uppercase"><i></i>Had travel history</th>
+                                        <th class="text-uppercase"><i></i>Risk Result</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1-March-2022</td>
+                                        <td>No</td>
+                                        <td>100</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                        <td><span class="text-green"><i class="far fa-times-circle"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>11-March-2022</td>
+                                        <td>Yes</td>
+                                        <td>140</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td><span class="text-danger"><i class="far fa-check-circle"></i></span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ! Script Begin -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/global.js"></script>
+    <!-- ! Script ends -->
+
+    <script type="text/javascript">
+
+    </script>
+</body>
+</html>
