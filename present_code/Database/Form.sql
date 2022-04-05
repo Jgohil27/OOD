@@ -14,7 +14,11 @@ Create procedure [dbo].AddFormSymptoms
    @isIPersonPostive bit , 
    @CovidDatetime datetime , 
    @HadOutings bit , 
-   @OutingCS varchar(255)
+   @OutingCS varchar(255), 
+   @Outforfood bit ,  
+   @RiskResult varchar(255) ,
+   @RiskScore int ,
+   @RiskCalculatedDate datetime
 )  
 as  
 begin  
@@ -32,7 +36,11 @@ begin
    @isIPersonPostive  , 
    @CovidDatetime  , 
    @HadOutings  , 
-   @OutingCS )  
+   @OutingCS, 
+   @Outforfood  ,  
+   @RiskResult ,
+   @RiskScore,
+   @RiskCalculatedDate ) 
 End 
 
 
@@ -51,11 +59,12 @@ End
 	isIPersonPostive bit , 
 	CovidDatetime datetime , 
 	HadOutings bit , 
-	OutingCS varchar(255)
+	OutingCS varchar(255) ,
+	RiskCalculatedDate datetime 
 );
 
 select * from form 
-
+--TRUNCATE TABLE form;
 sp_helptext AddFormSymptoms 
 
 DROP PROCEDURE AddFormSymptoms;  
@@ -64,3 +73,13 @@ GO
 
 select * from AspNetUsers
 --DROP TABLE form;
+
+
+
+ALTER TABLE form
+ADD Outforfood bit,
+ RiskResult varchar(255) ,
+ RiskScore int;
+
+ Alter table form 
+ Add RiskCalculatedDate datetime
