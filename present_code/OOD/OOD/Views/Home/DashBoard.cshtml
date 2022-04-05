@@ -3,10 +3,9 @@
 *@
 @{
 }
-@{
-    ViewData["Title"] = "CovidHighRisk";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+@*@{
+    ViewData["Title"] = "DashBoard";
+    }*@
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,9 +15,9 @@
     <!--favicon-->
     <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
     <!-- ! css Begin-->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-      <link rel="stylesheet" type="text/css" href="css/screen.css">
+    <link rel="stylesheet" type="text/css" href="~/css/dashbord-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/dashbord-screen.css">
+    <link rel="stylesheet" type="text/css" href="~/css/screen.css">
     <!-- ! css ends -->
     <!-- ! Custom fonts Begin -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -35,7 +34,7 @@
                 <a href="javascript:void(0)"><i class="fas fa-bars"></i></a>
             </div>
             <div class="logo">
-                <a href="#" class="fullLogo"><img src="images/logo.png" title="Unblock Insta"></a>
+                <a href="#" class="fullLogo"><img src="images/logo-2.png" title="Unblock Insta"></a>
                 <a href="#" class="logoIcon"><img src="images/logo-icon.png" title="Unblock Insta"></a>
 
             </div>
@@ -65,7 +64,7 @@
                     </a>
                 </div>
                 <div class="userProfileicon">
-                    <div class="userIcon coverbg" style="background-image: url('images/user-img.png')"></div>
+                    <div class="userIcon coverbg" style="background-image: url('~/images/user-img.png')"></div>
                     <div class="userstatus"></div>
                 </div>
             </div>
@@ -177,11 +176,13 @@
     </div>
 
 
-    <!-- ! Script Begin -->
-    <script src="js/jquery-2.2.4.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/global.js"></script>
-    <!-- ! Script ends -->
+     <!-- ! Script Begin -->
+       <script src="js/jquery-2.2.4.min.js"></script>
+      <script src="~/js/bootstrap.bundle.min.js"></script>
+      <script src="~/js/owl.carousel.min.js"></script> 
+      <script src="~/js/function.js"></script>
+      <script src="~/js/global.js"></script>
+      <!-- ! Script ends -->
 
     <script type="text/javascript">
 
