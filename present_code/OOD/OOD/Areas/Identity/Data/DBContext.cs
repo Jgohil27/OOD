@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using OOD.Areas.Identity.Data;
 
-namespace OOD.Data;
+namespace OOD.Areas.Identity.Data;
 
 public class DBContext : IdentityDbContext<ApplicationUser>
 {

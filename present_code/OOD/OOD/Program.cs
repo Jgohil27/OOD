@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using OOD.Areas.Identity.Data;
-using OOD.Data;
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DBContextConnection");builder.Services.AddDbContext<DBContext>(options =>
     options.UseSqlServer(connectionString));builder.Services.AddDefaultIdentity<ApplicationUser>(options =>

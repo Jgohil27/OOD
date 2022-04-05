@@ -10,20 +10,21 @@ namespace OOD.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        string DBConnection = "Server=KALYAN\\sqlexpress;Database=CovidDB;Trusted_Connection=True;MultipleActiveResultSets=true";
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
 
-        //private SqlConnection con;
+        private SqlConnection con;
 
-        //private void connection()
-        //{
-        //    string constr = ConfigurationManager.ConnectionStrings["getconn"].ToString();
-        //    con = new SqlConnection(constr);
-
-        //}
+        private void Connection()
+        {
+            string Connection = "Server=KALYAN\\sqlexpress;Database=CovidDB;Trusted_Connection=True;MultipleActiveResultSets=true";
+            //string test = System.Configuration.ConfigurationManager.ConnectionStrings["Test2"].ToString();
+            //string constr = System.Configuration.ConfigurationManager.ConnectionStrings["CovidConnection"].ConnectionString;
+            con = new SqlConnection(Connection);
+        }
 
         public IActionResult Index()
         {
@@ -48,10 +49,10 @@ namespace OOD.Controllers
                 if (ModelState.IsValid)
                 {
 
-                    //if (AddContactUs(CS))
-                    //{
-                    //    ViewBag.Message = "Employee details added successfully";
-                    //}
+                    if (AddContactUs(CS))
+                    {
+                        ViewBag.Message = "Employee details added successfully";
+                    }
                 }
 
                 return View();
@@ -62,32 +63,32 @@ namespace OOD.Controllers
             }
         }
 
-    //    public bool AddContactUs(ContactUs CS)
-    //    {
+        public bool AddContactUs(ContactUs CS)
+        {
 
-    //        connection();
-    //        SqlCommand com = new SqlCommand("AddNewEmpDetails", con);
-    //        com.CommandType = CommandType.StoredProcedure;
-    //        com.Parameters.AddWithValue("@FirstName", obj.FirstName);
-    //        com.Parameters.AddWithValue("@LastName", obj.LastName);
-    //        com.Parameters.AddWithValue("@EmailAddress", obj.EmailAddress);
-    //        com.Parameters.AddWithValue("@Message", obj.Message);
-    //        com.Parameters.AddWithValue("@PhoneNumber", obj.PhoneNumber);
-    //        con.Open();
-    //        int i = com.ExecuteNonQuery();
-    //        con.Close();
-    //        if (i >= 1)
-    //        {
+            Connection();
+            SqlCommand com = new SqlCommand("AddContactUsDetails", con)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            com.Parameters.AddWithValue("@FirstName", CS.FirstName);
+            com.Parameters.AddWithValue("@LastName", CS.LastName);
+            com.Parameters.AddWithValue("@EmailAddress", CS.EmailAddress);
+            com.Parameters.AddWithValue("@Message", CS.Message);
+            com.Parameters.AddWithValue("@PhoneNumber", CS.PhoneNumber);
+            con.Open();
+            int i = com.ExecuteNonQuery();
+            con.Close();
+            if (i >= 1)
+            {
+                return true;
+            }
+            else
+            {
 
-    //            return true;
-
-    //        }
-    //        else
-    //        {
-
-    //            return false;
-    //        }
-    //}
+                return false;
+            }
+        }
         public IActionResult Privacy()
         {
             return View();
