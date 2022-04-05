@@ -119,6 +119,76 @@ namespace OOD.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Form(FormViewModel CS)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+
+                    if (AddSymptoms(CS))
+                    {
+                        ViewBag.Message = "Symptoms details added successfully";
+                    }
+                }
+
+                return View();
+            }
+            catch (Exception ex)
+            {
+                return View();
+            }
+        }
+
+        public bool AddSymptoms(FormViewModel CS)
+        {
+
+            Connection();
+            SqlCommand com = new SqlCommand("AddFormSymptoms", con)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+
+            if(CS.DateNoted == DateTime.MinValue)
+            {
+                CS.DateNoted = DateTime.Now;
+            }
+            if (CS.CovidDatetime == DateTime.MinValue)
+            {
+                CS.CovidDatetime = DateTime.Now;
+            }
+
+            com.Parameters.AddWithValue("@HaveMedicalSymptoms", CS.HaveMedicalSymptoms);
+            com.Parameters.AddWithValue("@MedicalCovidSymptoms", CS.MedicalCovidSymptoms);
+            com.Parameters.AddWithValue("@DateNoted",CS.DateNoted);
+            com.Parameters.AddWithValue("@Temperature", CS.Temperature);
+            com.Parameters.AddWithValue("@TakeAnyMedicine", CS.TakeAnyMedicine);
+            com.Parameters.AddWithValue("@MedicineName", CS.MedicineName);
+            com.Parameters.AddWithValue("@DoctorVisit", CS.DoctorVisit);
+            com.Parameters.AddWithValue("@DoctorProfession", CS.DoctorProfession);
+            com.Parameters.AddWithValue("@HadInteraction", CS.HadInteraction);
+            com.Parameters.AddWithValue("@HadInteractioCS", CS.HadInteractioCS);
+            com.Parameters.AddWithValue("@InteractionCS", CS.InteractionCS);
+            com.Parameters.AddWithValue("@isIPersonPostive", CS.isIPersonPostive);
+            com.Parameters.AddWithValue("@CovidDatetime", CS.CovidDatetime);
+            com.Parameters.AddWithValue("@HadOutings", CS.HadOutings);
+            com.Parameters.AddWithValue("@OutingCS", CS.OutingCS);
+
+            con.Open();
+            int i = com.ExecuteNonQuery();
+            con.Close();
+            if (i >= 1)
+            {
+                return true;
+            }
+            else
+            {
+
+                return false;
+            }
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
