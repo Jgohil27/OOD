@@ -126,6 +126,16 @@ namespace OOD.Controllers
             {
                 if (ModelState.IsValid)
                 {
+                    CS.RiskScore = CS.HaveMedicalSymptoms ? CS.RiskScore + 30 : CS.RiskScore;
+                    CS.RiskScore = CS.Temperature > 100 ? CS.RiskScore + 10 : CS.RiskScore;
+                    CS.RiskScore = CS.DoctorVisit ? CS.RiskScore + 5 : CS.RiskScore;
+                    CS.RiskScore = CS.HadInteraction ? CS.RiskScore + 5 : CS.RiskScore;
+                    CS.RiskScore = CS.HadInteractioCS ? CS.RiskScore + 10 : CS.RiskScore;
+                    CS.RiskScore = CS.isIPersonPostive ? CS.RiskScore + 30 : CS.RiskScore;
+                    CS.RiskScore = CS.HadOutings ? CS.RiskScore + 5 : CS.RiskScore;
+                    CS.RiskScore = CS.Outforfood ? CS.RiskScore + 5 : CS.RiskScore;
+
+                    CS.RiskResult = CS.RiskScore <= 20 ? "Low" : CS.RiskScore >= 50 ? "High" : "Medium";
 
                     if (AddSymptoms(CS))
                     {
@@ -133,6 +143,18 @@ namespace OOD.Controllers
                     }
                 }
 
+                if(CS.RiskScore <= 20)
+                {
+                    return RedirectToAction("CovidLowRisk", "Home");
+                }
+                else if (CS.RiskScore >= 50)
+                {
+                    return RedirectToAction("CovidHighRisk", "Home");
+                }
+                else if (CS.RiskScore >=21 && CS.RiskScore <= 49)
+                {
+                    return RedirectToAction("CovidMediumRisk", "Home");
+                }
                 return View();
             }
             catch (Exception ex)
@@ -150,30 +172,34 @@ namespace OOD.Controllers
                 CommandType = CommandType.StoredProcedure
             };
 
-            if(CS.DateNoted == DateTime.MinValue)
+            if(CS.DateNoted == DateTime.MinValue || CS.DateNoted == null)
             {
                 CS.DateNoted = DateTime.Now;
             }
-            if (CS.CovidDatetime == DateTime.MinValue)
+            if (CS.CovidDatetime == DateTime.MinValue || CS.CovidDatetime == null)
             {
                 CS.CovidDatetime = DateTime.Now;
             }
 
             com.Parameters.AddWithValue("@HaveMedicalSymptoms", CS.HaveMedicalSymptoms);
-            com.Parameters.AddWithValue("@MedicalCovidSymptoms", CS.MedicalCovidSymptoms);
+            com.Parameters.AddWithValue("@MedicalCovidSymptoms", CS.MedicalCovidSymptoms == null ? "-" : CS.MedicalCovidSymptoms);
             com.Parameters.AddWithValue("@DateNoted",CS.DateNoted);
             com.Parameters.AddWithValue("@Temperature", CS.Temperature);
             com.Parameters.AddWithValue("@TakeAnyMedicine", CS.TakeAnyMedicine);
-            com.Parameters.AddWithValue("@MedicineName", CS.MedicineName);
+            com.Parameters.AddWithValue("@MedicineName", CS.MedicineName == null ? "-" : CS.MedicineName);
             com.Parameters.AddWithValue("@DoctorVisit", CS.DoctorVisit);
-            com.Parameters.AddWithValue("@DoctorProfession", CS.DoctorProfession);
+            com.Parameters.AddWithValue("@DoctorProfession", CS.DoctorProfession == null ? "-" : CS.DoctorProfession);
             com.Parameters.AddWithValue("@HadInteraction", CS.HadInteraction);
             com.Parameters.AddWithValue("@HadInteractioCS", CS.HadInteractioCS);
-            com.Parameters.AddWithValue("@InteractionCS", CS.InteractionCS);
+            com.Parameters.AddWithValue("@InteractionCS", CS.InteractionCS == null ? "-" : CS.InteractionCS);
             com.Parameters.AddWithValue("@isIPersonPostive", CS.isIPersonPostive);
             com.Parameters.AddWithValue("@CovidDatetime", CS.CovidDatetime);
             com.Parameters.AddWithValue("@HadOutings", CS.HadOutings);
-            com.Parameters.AddWithValue("@OutingCS", CS.OutingCS);
+            com.Parameters.AddWithValue("@OutingCS", CS.OutingCS == null ? "-" : CS.OutingCS);
+            com.Parameters.AddWithValue("@Outforfood", CS.Outforfood);
+            com.Parameters.AddWithValue("@RiskResult", CS.RiskResult);
+            com.Parameters.AddWithValue("@RiskScore", CS.RiskScore);
+            com.Parameters.AddWithValue("@RiskCalculatedDate", DateTime.Now);
 
             con.Open();
             int i = com.ExecuteNonQuery();
