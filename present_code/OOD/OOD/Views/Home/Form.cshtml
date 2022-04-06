@@ -87,7 +87,7 @@
                                                 <label class="form-check-label" for="owncovidcheck">Do you have any covid symptoms?</label>
                                                 </div>*@
                                             @*<div class="check-box-wrapper">*@
-                                            @Html.CheckBoxFor(m => m.HaveMedicalSymptoms, new { @class = "form-group" })
+                                            @Html.CheckBoxFor(m => m.HaveMedicalSymptoms, new { @class = "form-group", id="HaveMedicalSymptoms" })
                                             @Html.DisplayName("Do you have any covid symptoms?")
                                             @*</div>*@
                                             @* </div>*@
@@ -106,10 +106,9 @@
                                                     <option>Shortness of breath or difficulty breathing</option>
                                                     <option>Other</option>
                                                     </select>*@
-                                                @Html.DisplayName("Symptoms Related to Covid")
-                                                @Html.DropDownListFor(m=>m.MedicalCovidSymptoms, new List<SelectListItem>
+                                               @Html.DisplayName("Symptoms Related to Covid")
+                                               @Html.DropDownListFor(m=>m.MedicalCovidSymptoms, new List<SelectListItem>
                                             {
-                                            new SelectListItem{ Text="Select", Value="Select"},
                                             new SelectListItem{ Text="Fever", Value="Fever"},
                                             new SelectListItem{ Text="Cough", Value="Cough"},
                                             new SelectListItem{ Text="Fatigue", Value="Fatigue"},
@@ -119,7 +118,7 @@
                                             new SelectListItem{ Text="Shortness of breath or difficulty breathing", Value="Shortness of breath or difficulty breathing"},
                                             new SelectListItem{ Text="Other", Value="Other"}
 
-                                            }, new { multiple = "multiple" })
+                                            }, new { multiple = "multiple", @id="drpMedicalCovidSymptoms" })
                                             </div>
 
                                         </div>
@@ -130,7 +129,7 @@
 
                                                 @Html.DisplayName("Date of symptoms noted")
                                                 @*@Html.LabelFor(m => m.DateNoted, htmlAttributes: new { @class = "col-sm-6 mb-3" })*@
-                                                @Html.EditorFor(m => m.DateNoted, new { htmlAttributes = new { @class = "form-control"} })
+                                                @Html.EditorFor(m => m.DateNoted, new { htmlAttributes = new { @class = "form-control", id="DateNoted"} })
                                             </div>
                                         </div>
 
@@ -149,7 +148,7 @@
                                             @*<input type="checkbox" class="form-check-input" id="medicinecheck"
                                                 onchange="document.getElementById('medicine').disabled = !this.checked; ">
                                                 <label class="form-check-label" for="medicinecheck">Do you take any regular medicine?</label>*@
-                                            @Html.CheckBoxFor(m => m.TakeAnyMedicine, new { @class = "form-group" })
+                                            @Html.CheckBoxFor(m => m.TakeAnyMedicine, new { @class = "form-group",  id="TakeAnyMedicine" })
                                             @Html.DisplayName("Do you take any regular medicine?")
                                             @* </div>*@
                                             @*</div>*@
@@ -159,7 +158,7 @@
                                                 @*<label>Medicine Name</label>
                                                     <input type="text" class="form-control" placeholder="" id="medicine" disabled>*@
                                                 @Html.DisplayName("Medicine Name")
-                                                @Html.TextBoxFor(m => m.MedicineName, new { @class = "form-control" })
+                                                @Html.TextBoxFor(m => m.MedicineName, new { @class = "form-control", id="MedicineName"  })
                                             </div>
                                         </div>
 
@@ -169,7 +168,7 @@
                                             @*<input type="checkbox" class="form-check-input" id="doctorvisitcheck"
                                                 onchange="document.getElementById('doctorprofession').disabled = !this.checked; ">
                                                 <label class="form-check-label" for="doctorvisitcheck">Have you visit any doctor in past 10 days?</label>*@
-                                            @Html.CheckBoxFor(m => m.DoctorVisit, new { @class = "form-group" })
+                                            @Html.CheckBoxFor(m => m.DoctorVisit, new { @class = "form-group", id="DoctorVisit"  })
                                             @Html.DisplayName("Have you visit any doctor in past 10 days?")
                                             @*</div>*@
                                             @*</div>*@
@@ -207,7 +206,7 @@
                                             new SelectListItem{ Text="Geriatric Medicine Specialists", Value = "Geriatric Medicine Specialists" },
                                             new SelectListItem{ Text="Infectious Disease Specialists", Value = "Infectious Disease Specialists" },
                                             new SelectListItem{ Text="Other", Value = "Other" },
-                                            })
+                                            }, new {id="DoctorProfession" })
 
                                             </div>
                                         </div>
@@ -224,7 +223,7 @@
                                             @* <input type="checkbox" class="form-check-input" id="metotherscheck"
                                                 onchange="document.getElementById('otherssymptomscheck').disabled = !this.checked; document.getElementById('otherscovidcheck').disabled = !this.checked;">
                                                 <label class="form-check-label" for="metotherscheck">Met any Relative/Friends in past 10 days?</label>*@
-                                            @Html.CheckBoxFor(m => m.HadInteraction, new { @class = "form-group" })
+                                            @Html.CheckBoxFor(m => m.HadInteraction, new { @class = "form-group", id="HadInteraction"  })
                                             @Html.DisplayName("Met any Relative/Friends in past 10 days?")
                                             @*</div>*@
                                             @*</div>*@
@@ -235,7 +234,7 @@
                                                     @*<input type="checkbox" class="form-check-input" id="otherssymptomscheck"
                                                         onchange="document.getElementById('otherssymptoms').disabled = !this.checked; " disabled>
                                                         <label class="form-check-label" for="otherssymptomscheck">That person had any Covid Symptoms?</label>*@
-                                                    @Html.CheckBoxFor(m => m.HadInteractioCS, new { @class = "form-group" })
+                                                    @Html.CheckBoxFor(m => m.HadInteractioCS, new { @class = "form-group", id = "HadInteractioCS" })
                                                     @Html.DisplayName("That person had any Covid Symptoms?")
                                                 </div>
                                             </div>
@@ -266,7 +265,7 @@
                                             new SelectListItem{ Text="Shortness of breath or difficulty breathing", Value="Shortness of breath or difficulty breathing"},
                                             new SelectListItem{ Text="Other", Value="Other"}
 
-                                            }, new { multiple = "multiple" })
+                                            }, new { multiple = "multiple", id="InteractionCS" })
                                             </div>
                                         </div>
                                         <div class="col-sm-12">
@@ -275,7 +274,7 @@
                                             @*<input type="checkbox" class="form-check-input" id="otherscovidcheck"
                                                 onchange="document.getElementById('otherscoviddate').disabled = !this.checked;" disabled>
                                                 <label class="form-check-label" for="otherscovidcheck">Is that Person Covid Positive?</label>*@
-                                            @Html.CheckBoxFor(m => m.isIPersonPostive, new { @class = "form-group" })
+                                            @Html.CheckBoxFor(m => m.isIPersonPostive, new { @class = "form-group", id = "isIPersonPostive" })
                                             @Html.DisplayName("Is that Person Covid Positive?")
                                             @*</div>*@
                                             @*</div>*@
@@ -286,7 +285,7 @@
                                                     <input type="date" class="form-control" placeholder="" id="otherscoviddate" disabled>*@
                                                 @Html.DisplayName("Date noted for COVID positive")
                                                 @*@Html.LabelFor(m => m.CovidDatetime, htmlAttributes: new { @class = "col-sm-6 mb-3" })*@
-                                                @Html.EditorFor(m => m.CovidDatetime, new { htmlAttributes = new { @class = "form-control"} })
+                                                @Html.EditorFor(m => m.CovidDatetime, new { htmlAttributes = new { @class = "form-control", id = "CovidDatetime"} })
                                             </div>
                                         </div>
 
@@ -303,7 +302,7 @@
                                             @*<input type="checkbox" class="form-check-input" id="travelcheck"
                                                 onchange="document.getElementById('travelstate').disabled = !this.checked;">
                                                 <label class="form-check-label" for="travelcheck">Had Travel history of 10 days?</label>*@
-                                            @Html.CheckBoxFor(m => m.HadOutings, new { @class = "form-group" })
+                                            @Html.CheckBoxFor(m => m.HadOutings, new { @class = "form-group", id="HadOutings" })
                                             @Html.DisplayName("Had Travel history of 10 days?")
                                             @*  </div>*@
                                             @* </div>*@
@@ -420,7 +419,7 @@
                                             new SelectListItem{ Value="WI", Text="Wisconsin"},
                                             new SelectListItem{ Value="WY", Text="Wyoming"}
 
-                                            })
+                                            }, new {id="OutingCS"})
                                             </div>
                                         </div>
                                         <div class="col-sm-12">
@@ -457,8 +456,79 @@
         <!-- ! Script ends -->
 
     <script type="text/javascript">
+        $( document ).ready(function() {
+              $('#drpMedicalCovidSymptoms').attr('disabled', 'disabled');
+              $('#DateNoted').attr('disabled', 'disabled');
+              $('#MedicineName').attr('disabled', 'disabled');
+              $('#DoctorProfession').attr('disabled', 'disabled');
+              $('#HadInteractioCS').attr('disabled', 'disabled');
+              $('#isIPersonPostive').attr('disabled', 'disabled');
+              $('#InteractionCS').attr('disabled', 'disabled');
+              $('#CovidDatetime').attr('disabled', 'disabled');
+              $('#OutingCS').attr('disabled', 'disabled');
+        });
 
-        </script>
+        $('#HaveMedicalSymptoms').change(function() {
+             if ($("#HaveMedicalSymptoms").is(':checked')) {
+                $('#drpMedicalCovidSymptoms').removeAttr('disabled');
+                $('#DateNoted').removeAttr('disabled');
+            } else {
+                $('#drpMedicalCovidSymptoms').attr('disabled', 'disabled');
+                $('#DateNoted').attr('disabled', 'disabled');
+            }    
+        });
+
+        $('#TakeAnyMedicine').change(function() {
+             if ($("#TakeAnyMedicine").is(':checked')) {
+                $('#MedicineName').removeAttr('disabled');
+            } else {
+                $('#MedicineName').attr('disabled', 'disabled');
+            }    
+        });
+
+        $('#DoctorVisit').change(function() {
+             if ($("#DoctorVisit").is(':checked')) {
+                $('#DoctorProfession').removeAttr('disabled');
+            } else {
+                $('#DoctorProfession').attr('disabled', 'disabled');
+            }    
+        });
+
+        $('#HadInteraction').change(function() {
+             if ($("#HadInteraction").is(':checked')) {
+                $('#HadInteractioCS').removeAttr('disabled');
+                $('#isIPersonPostive').removeAttr('disabled');
+            } else {
+                $('#HadInteractioCS').attr('disabled', 'disabled');
+                $('#isIPersonPostive').attr('disabled', 'disabled');
+            }    
+        });
+
+        $('#HadInteractioCS').change(function() {
+             if ($("#HadInteractioCS").is(':checked')) {
+                $('#InteractionCS').removeAttr('disabled');
+            } else {
+                $('#InteractionCS').attr('disabled', 'disabled');
+            }    
+        });
+
+        $('#isIPersonPostive').change(function() {
+             if ($("#isIPersonPostive").is(':checked')) {
+                $('#CovidDatetime').removeAttr('disabled');
+            } else {
+                $('#CovidDatetime').attr('disabled', 'disabled');
+            }    
+        });
+
+        $('#HadOutings').change(function() {
+             if ($("#HadOutings").is(':checked')) {
+                $('#OutingCS').removeAttr('disabled');
+            } else {
+                $('#OutingCS').attr('disabled', 'disabled');
+            }    
+        });
+
+    </script>
     </body>
     </html>
 }

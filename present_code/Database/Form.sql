@@ -67,8 +67,8 @@ select * from form
 --TRUNCATE TABLE form;
 sp_helptext AddFormSymptoms 
 
-DROP PROCEDURE AddFormSymptoms;  
-GO  
+--DROP PROCEDURE AddFormSymptoms;  
+--GO  
 
 
 select * from AspNetUsers
@@ -76,10 +76,10 @@ select * from AspNetUsers
 
 
 
-ALTER TABLE form
-ADD Outforfood bit,
- RiskResult varchar(255) ,
- RiskScore int;
+--ALTER TABLE form
+--ADD Outforfood bit,
+-- RiskResult varchar(255) ,
+-- RiskScore int;
 
- Alter table form 
- Add RiskCalculatedDate datetime
+ --Alter table form 
+ --Add RiskCalculatedDate datetime
