@@ -5,6 +5,9 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using OOD.Areas.Identity.Data;
+using Microsoft.AspNetCore.Identity;
+
 namespace OOD.Controllers
 {
     public class HomeController : Controller
@@ -31,9 +34,22 @@ namespace OOD.Controllers
             return View();
         }
 
-        public IActionResult Dashboard()
+        public IActionResult Dashboard(ProfileViewModel CS)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                if (FetchProfile(CS))
+                {
+                    ViewBag.Message = "Profile loaded successfully";
+                }
+            }
+            ViewBag.FirstName = CS.FirstName;
+            ViewBag.LastName = CS.LastName;
+            ViewBag.PhoneNumber = CS.PhoneNumber;
+            ViewBag.EmailAddress = CS.EmailAddress;
+            // ViewBag.DOB = "08/"
+            ViewBag.State = "Virgina";
+            return View(CS);
         }
 
         public IActionResult ContactUs()
@@ -85,7 +101,6 @@ namespace OOD.Controllers
             }
             else
             {
-
                 return false;
             }
         }
@@ -109,9 +124,56 @@ namespace OOD.Controllers
             return View();
         }
 
-        public IActionResult Profile()
+        [HttpGet]
+        public IActionResult Profile(ProfileViewModel CS)
         {
-            return View();
+            if(ModelState.IsValid)
+            {
+                if (FetchProfile(CS))
+                {
+                    ViewBag.Message = "Profile loaded successfully";
+                }
+            }
+            return View(CS);
+        }
+
+        public bool FetchProfile(ProfileViewModel CS)
+        {
+            Connection();
+            SqlCommand com = new SqlCommand("FetchProfile", con)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            com.Parameters.AddWithValue("@EmailId", "kalyanking12@gmail.com");
+          
+            com.Parameters.Add("@FirstName",SqlDbType.VarChar, 50);
+            com.Parameters.Add("@LastName", SqlDbType.VarChar, 50);
+            com.Parameters.Add("@Email", SqlDbType.VarChar, 50);
+            com.Parameters.Add("@PhoneNumber", SqlDbType.Int);
+            com.Parameters["@FirstName"].Direction = ParameterDirection.Output;
+            com.Parameters["@LastName"].Direction = ParameterDirection.Output;
+            com.Parameters["@Email"].Direction = ParameterDirection.Output;
+            com.Parameters["@PhoneNumber"].Direction = ParameterDirection.Output;
+            con.Open();         
+            int i = com.ExecuteNonQuery();
+            CS.FirstName = com.Parameters["@FirstName"].Value.ToString();
+            CS.LastName = com.Parameters["@LastName"].Value.ToString();
+            CS.EmailAddress = com.Parameters["@Email"].Value.ToString();
+            CS.PhoneNumber = (int?)com.Parameters["@PhoneNumber"].Value;
+            ViewBag.FirstName = CS.FirstName;
+            // var o = com.();
+            con.Close();
+            if (i >= 1)
+            {
+                return true;
+            }
+            else
+            {
+
+                return false;
+            }
+           
+
         }
 
         public IActionResult ForgotPassword()

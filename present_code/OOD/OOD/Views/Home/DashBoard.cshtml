@@ -3,6 +3,7 @@
 *@
 @{
 }
+@model OOD.Models.ProfileViewModel;
 @*@{
     ViewData["Title"] = "DashBoard";
     }*@
@@ -77,12 +78,13 @@
                             </div>
                             <h5 class="text-blue">User Profile <span></span></h5>
                             <div class="userDetails">
-                                <p class="mb-3"><span class="mr-2"><strong>First Name</strong></span><span>Your First Name</span></p>
-                                <p class="mb-3"><span class="mr-2"><strong>Last Name</strong></span><span>Your Last Name</span></p>
-                                <p class="mb-3"><span class="mr-2"><strong>Email</strong></span><span>Your Email</span></p>
-                                <p class="mb-3"><span class="mr-2"><strong>Contact Number</strong></span><span>Yout contact info</span></p>
-                                <p class="mb-3"><span class="mr-2"><strong>Date of Birth</strong></span><span>Your DOB</span></p>
-                                <p class="mb-3"><span class="mr-2"><strong>State of living</strong></span><span>Your State</span></p>
+                                <p class="mb-3"><span class="mr-2"><strong>First Name</strong></span><span>@ViewBag.FirstName</span></p>
+                                @*@Html.LabelFor(model => model.FirstName)*@
+                                <p class="mb-3"><span class="mr-2"><strong>Last Name</strong></span><span>@ViewBag.LastName</span></p>
+                                <p class="mb-3"><span class="mr-2"><strong>Email</strong></span><span>@ViewBag.EmailAddress</span></p>
+                                <p class="mb-3"><span class="mr-2"><strong>Contact Number</strong></span><span>@ViewBag.PhoneNumber</span></p>
+                                <p class="mb-3"><span class="mr-2"><strong>Date of Birth</strong></span><span>-</span></p>
+                                <p class="mb-3"><span class="mr-2"><strong>State of living</strong></span><span>@ViewBag.State</span></p>
                             </div>
                         </div>
                     </div>
