@@ -1706,3 +1706,8 @@ button.owl-dot.active:before {
 ***************************************************************************************/
 @media screen and (min-width:1300px) {
 }
+
+
+ul.maintopbar > li:before {
+    background-color: white !important;
+}

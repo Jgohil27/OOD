@@ -7,6 +7,8 @@ using System.Data.SqlClient;
 using System.Linq;
 using OOD.Areas.Identity.Data;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
+using OOD.Areas.Identity.Pages.Account;
 
 namespace OOD.Controllers
 {
@@ -34,6 +36,7 @@ namespace OOD.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult Dashboard(ProfileViewModel CS)
         {
             if (ModelState.IsValid)
@@ -124,6 +127,7 @@ namespace OOD.Controllers
             return View();
         }
 
+        [Authorize]
         [HttpGet]
         public IActionResult Profile(ProfileViewModel CS)
         {
@@ -144,8 +148,8 @@ namespace OOD.Controllers
             {
                 CommandType = CommandType.StoredProcedure
             };
-            com.Parameters.AddWithValue("@EmailId", "kalyanking12@gmail.com");
-          
+            com.Parameters.AddWithValue("@EmailId", "rihan@gmail.com");
+            //com.Parameters.AddWithValue("@EmailId", ApplicationUser.);
             com.Parameters.Add("@FirstName",SqlDbType.VarChar, 50);
             com.Parameters.Add("@LastName", SqlDbType.VarChar, 50);
             com.Parameters.Add("@Email", SqlDbType.VarChar, 50);
@@ -159,7 +163,8 @@ namespace OOD.Controllers
             CS.FirstName = com.Parameters["@FirstName"].Value.ToString();
             CS.LastName = com.Parameters["@LastName"].Value.ToString();
             CS.EmailAddress = com.Parameters["@Email"].Value.ToString();
-            CS.PhoneNumber = (int?)com.Parameters["@PhoneNumber"].Value;
+            CS.PhoneNumber = Convert.IsDBNull(com.Parameters["@PhoneNumber"].Value)? null:(int ?)com.Parameters["@PhoneNumber"].Value;
+          //  Convert.IsDBNull(reader["AcceptanceActID"]) ? null : (int?)reader["AcceptanceActID"],
             ViewBag.FirstName = CS.FirstName;
             // var o = com.();
             con.Close();
@@ -181,6 +186,7 @@ namespace OOD.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult Form()
         {
             return View();
