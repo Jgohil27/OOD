@@ -31,7 +31,6 @@
 
 </head>
 <body>
-     @UserManager.GetUserName(User)!
     <div class="dashboardScreenWrapper d-flex">
         <div class="mainMenuWrapper mainequalheight">
             <div class="menuIcon">
@@ -186,7 +185,9 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-12 align-self-end text-md-right" style= "margin-top:10px">
-                                        <button type="submit" class="buttonDark">Update Profile</button>
+                                        <a href='/Home/UpdateProfile'>
+                                            <button type="submit" class="buttonDark">Update Profile</button>
+                                        </a>
                                     </div>
                                 </div>
                             </form>

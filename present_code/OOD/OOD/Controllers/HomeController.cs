@@ -70,11 +70,11 @@ namespace OOD.Controllers
 
                     if (AddContactUs(CS))
                     {
-                        ViewBag.Message = "Employee details added successfully";
+                        ViewBag.Message = "Contact details added successfully";
                     }
                 }
 
-                return View();
+                return RedirectToAction("Index", "Home");
             }
             catch
             {
@@ -132,6 +132,18 @@ namespace OOD.Controllers
         public IActionResult Profile(ProfileViewModel CS)
         {
             if(ModelState.IsValid)
+            {
+                if (FetchProfile(CS))
+                {
+                    ViewBag.Message = "Profile loaded successfully";
+                }
+            }
+            return View(CS);
+        }
+
+        public IActionResult UpdateProfile(ProfileViewModel CS)
+        {
+            if (ModelState.IsValid)
             {
                 if (FetchProfile(CS))
                 {

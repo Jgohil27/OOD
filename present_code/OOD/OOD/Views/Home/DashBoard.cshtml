@@ -40,16 +40,16 @@
             </div>
             <div class="menulist">
                 <ul>
-                        <li>
-                            <a  href='/Home/DashBoard' class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-                        </li>
-                        <li>
-                            <a href='/Home/Profile'><i class="fas fa-border-all"></i> My Profile</a>
-                        </li>
-                        <li>
-                            <a href='/Home/Form'><i class="far fa-file"></i> New Form</a>
-                        </li>
-                    </ul>
+                    <li>
+                        <a href='/Home/DashBoard' class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href='/Home/Profile'><i class="fas fa-border-all"></i> My Profile</a>
+                    </li>
+                    <li>
+                        <a href='/Home/Form'><i class="far fa-file"></i> New Form</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="contentPart mainequalheight">
@@ -82,7 +82,7 @@
                                 @*@Html.LabelFor(model => model.FirstName)*@
                                 <p class="mb-3"><span class="mr-2"><strong>Last Name</strong></span><span>@ViewBag.LastName</span></p>
                                 <p class="mb-3"><span class="mr-2"><strong>Email</strong></span><span>@ViewBag.EmailAddress</span></p>
-                                <p class="mb-3"><span class="mr-2"><strong>Contact Number</strong></span><span>@ViewBag.PhoneNumber</span></p>
+                                <p class="mb-3"><span class="mr-2"><strong>Contact Number</strong></span><span>-</span></p>
                                 <p class="mb-3"><span class="mr-2"><strong>Date of Birth</strong></span><span>-</span></p>
                                 <p class="mb-3"><span class="mr-2"><strong>State of living</strong></span><span>@ViewBag.State</span></p>
                             </div>
@@ -131,17 +131,24 @@
 
                 <div class="referralLinkSection ">
                     <div class="row">
-                        <div class="col-12">
-                            <h5 class="text-blue">Last 10 records <span></span></h5>
+                        <div class="col-6">
+                            <h5 class="text-blue">Previous records <span></span></h5>
                         </div>
-                        <div class="col-12">
+                        <div class="col-6">
+                            <div class="editPrifle">
+                                <a href="#">View Details</a>
+                            </div>
+                        </div>
+                        <div class="col-12" style="margin-top:30px">
                             <table class="table table-striped tdcenterValue large-table-responsive">
                                 <thead>
                                     <tr>
                                         <th class="text-uppercase"><i></i>Date</th>
                                         <th class="text-uppercase"><i></i>Had any covid symptoms</th>
-                                        <th class="text-uppercase"><i></i>Temperature</th>
+                                        <th class="text-uppercase"><i></i>Temperature (°F)</th>
+                                        <th class="text-uppercase"><i></i>Regular medicine</th>
                                         <th class="text-uppercase"><i></i>Had met anyone</th>
+                                        <th class="text-uppercase"><i></i>Had met person has Covid</th>
                                         <th class="text-uppercase"><i></i>Had travel history</th>
                                         <th class="text-uppercase"><i></i>Risk Result</th>
                                         <th></th>
@@ -151,18 +158,22 @@
                                     <tr>
                                         <td>1-March-2022</td>
                                         <td>No</td>
-                                        <td>100</td>
+                                        <td>96</td>
                                         <td>No</td>
                                         <td>No</td>
-                                        <td><span class="text-green"><i class="far fa-times-circle"></i></span></td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                        <td><span class="text-green"><i class="far fa-check-circle"></i></span></td>
                                     </tr>
                                     <tr>
                                         <td>11-March-2022</td>
                                         <td>Yes</td>
-                                        <td>140</td>
+                                        <td>110</td>
                                         <td>Yes</td>
                                         <td>Yes</td>
-                                        <td><span class="text-danger"><i class="far fa-check-circle"></i></span></td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td><span class="text-danger"><i class="far fa-times-circle"></i></span></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -174,10 +185,10 @@
     </div>
 
 
-     <!-- ! Script Begin -->
-      <script src="../js/function.js"></script>
-      <script src="../js/global.js"></script>
-      <!-- ! Script ends -->
+    <!-- ! Script Begin -->
+    <script src="../js/function.js"></script>
+    <script src="../js/global.js"></script>
+    <!-- ! Script ends -->
 
     <script type="text/javascript">
 

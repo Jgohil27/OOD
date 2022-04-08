@@ -281,3 +281,8 @@ background: #1dc4e9; /* Old browsers */ background: -moz-linear-gradient(left, #
 	*MEDIA QUERY FOR DEVICE WIDTH MORE THEN 1366 STARTS
 	***************************************************************************************/
 	@media screen and (min-width:1366px) { }
+
+
+ul.maintopbar > li:before {
+	background-color: white !important;
+}
