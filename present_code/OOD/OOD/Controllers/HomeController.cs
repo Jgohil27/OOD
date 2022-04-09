@@ -16,6 +16,8 @@ namespace OOD.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         string DBConnection = "Server=KALYAN\\sqlexpress;Database=CovidDB;Trusted_Connection=True;MultipleActiveResultSets=true";
+        string? LastName, FirstName, EmailId;
+        int? PhoneNumber ; 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -128,29 +130,63 @@ namespace OOD.Controllers
         }
 
         [Authorize]
-        [HttpGet]
+        //[HttpGet]
         public IActionResult Profile(ProfileViewModel CS)
         {
             if(ModelState.IsValid)
             {
                 if (FetchProfile(CS))
                 {
+                    LastName = CS.LastName;
+                    FirstName = CS.FirstName;
+                    EmailId = CS.EmailAddress;
+                    PhoneNumber = CS.PhoneNumber;
                     ViewBag.Message = "Profile loaded successfully";
                 }
             }
             return View(CS);
         }
 
+        [HttpPost]
+        [ActionName("Profile")]
         public IActionResult UpdateProfile(ProfileViewModel CS)
         {
+            CS.LastName = LastName;
+            CS.FirstName = FirstName ;
+            CS.EmailAddress = EmailId ;
+            CS.PhoneNumber = PhoneNumber;
             if (ModelState.IsValid)
             {
-                if (FetchProfile(CS))
+                if (AddUpdatedProfile(CS))
                 {
-                    ViewBag.Message = "Profile loaded successfully";
+                    ViewBag.Message = "Profile Updated successfully";
                 }
             }
-            return View(CS);
+            return RedirectToAction("Index", "Profile");
+        }
+
+        public bool AddUpdatedProfile(ProfileViewModel CS)
+        {
+            Connection();
+            SqlCommand com = new SqlCommand("AddUpdatedProfile", con)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            con.Open();
+            int i = com.ExecuteNonQuery();
+            com.Parameters.AddWithValue("@EmailId", CS.EmailAddress);
+            com.Parameters.AddWithValue("@FirstName", CS.FirstName);
+            com.Parameters.AddWithValue("@LastName", CS.LastName);            
+            com.Parameters.AddWithValue("@PhoneNumber", CS.PhoneNumber);
+            con.Open();
+            if (i >= 1)
+            {
+                return true;
+            }
+            else
+            {
+               return false;
+            }
         }
 
         public bool FetchProfile(ProfileViewModel CS)
@@ -160,7 +196,7 @@ namespace OOD.Controllers
             {
                 CommandType = CommandType.StoredProcedure
             };
-            com.Parameters.AddWithValue("@EmailId", "rihan@gmail.com");
+            com.Parameters.AddWithValue("@EmailId", "kalyanking12@gmail.com");
             //com.Parameters.AddWithValue("@EmailId", ApplicationUser.);
             com.Parameters.Add("@FirstName",SqlDbType.VarChar, 50);
             com.Parameters.Add("@LastName", SqlDbType.VarChar, 50);
