@@ -151,10 +151,10 @@ namespace OOD.Controllers
         [ActionName("Profile")]
         public IActionResult UpdateProfile(ProfileViewModel CS)
         {
-            CS.LastName = LastName;
-            CS.FirstName = FirstName ;
-            CS.EmailAddress = EmailId ;
-            CS.PhoneNumber = PhoneNumber;
+            //CS.LastName = LastName;
+            //CS.FirstName = FirstName ;
+            //CS.EmailAddress = EmailId ;
+            //CS.PhoneNumber = PhoneNumber;
             if (ModelState.IsValid)
             {
                 if (AddUpdatedProfile(CS))
@@ -162,7 +162,7 @@ namespace OOD.Controllers
                     ViewBag.Message = "Profile Updated successfully";
                 }
             }
-            return RedirectToAction("Index", "Profile");
+            return RedirectToAction("Dashboard", "Home");
         }
 
         public bool AddUpdatedProfile(ProfileViewModel CS)
@@ -171,14 +171,14 @@ namespace OOD.Controllers
             SqlCommand com = new SqlCommand("AddUpdatedProfile", con)
             {
                 CommandType = CommandType.StoredProcedure
-            };
-            con.Open();
-            int i = com.ExecuteNonQuery();
+            };            
             com.Parameters.AddWithValue("@EmailId", CS.EmailAddress);
             com.Parameters.AddWithValue("@FirstName", CS.FirstName);
             com.Parameters.AddWithValue("@LastName", CS.LastName);            
             com.Parameters.AddWithValue("@PhoneNumber", CS.PhoneNumber);
             con.Open();
+            int i = com.ExecuteNonQuery();
+            con.Close();
             if (i >= 1)
             {
                 return true;
