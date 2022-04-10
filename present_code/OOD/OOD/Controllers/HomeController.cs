@@ -196,7 +196,7 @@ namespace OOD.Controllers
             {
                 CommandType = CommandType.StoredProcedure
             };
-            com.Parameters.AddWithValue("@EmailId", "kalyanking12@gmail.com");
+            com.Parameters.AddWithValue("@EmailId", "rihan@gmail.com");
             //com.Parameters.AddWithValue("@EmailId", ApplicationUser.);
             com.Parameters.Add("@FirstName",SqlDbType.VarChar, 50);
             com.Parameters.Add("@LastName", SqlDbType.VarChar, 50);
