@@ -1,1 +1,14 @@
-This folder contains all the required files,ppt,UML,etc. required to this Covid Dashboard
+This folder contains all the required files,ppt,UML,etc. to this Covid Dashboard
+
+Project Requirements:
+
+Tools:
+Microsoft SQL Server
+Microsoft Visual Studio
+
+Browser:
+Any (Chrome, Firefox, Microsoft Edge)
+
+Language Used:
+C# - Backend, For database connectivity
+Html, Css, JavaScript, JQuery - Frontend
