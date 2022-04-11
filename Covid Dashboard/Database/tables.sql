@@ -1,5 +1,22 @@
 /*Users Table*/
-
+Create table AspNetUsers 
+(Id	nvarchar(100) , 
+FirstName	nvarchar(100)  ,
+LastName	nvarchar(100) ,
+UserName    nvarchar(256) , 
+NormalizedUserName  nvarchar(256) , 
+Email	nvarchar(256) , 
+NormalizedEmail	nvarchar(256) , 
+EmailConfirmed	bit , 
+PasswordHash	nvarchar(max) , 
+SecurityStamp	nvarchar(max) , 
+ConcurrencyStamp	nvarchar(MAX) , 
+PhoneNumber	nvarchar(MAX) , 
+PhoneNumberConfirmed bit , 
+TwoFactorEnabled	bit , 
+LockoutEnd  datetimeoffset(7) , 
+LockoutEnabled	bit , 
+AccessFailedCount int );
 
 /*Contact Us Table*/
 CREATE TABLE ContactUs (
