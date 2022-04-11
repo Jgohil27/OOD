@@ -139,6 +139,7 @@
                                                     <input type="number" class="form-control" placeholder="" id="temprature">*@
                                                 @Html.DisplayName("Temperature (°F)")
                                                 @Html.TextBoxFor(m => m.Temperature, new { @class = "form-control" })
+                                                @Html.ValidationMessage("Temperature should not be less than 1")
                                             </div>
                                         </div>
 

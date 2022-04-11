@@ -1,11 +1,14 @@
-﻿namespace OOD.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace OOD.Models
 {
     public class FormViewModel
     {
         public bool HaveMedicalSymptoms { get; set; }
         public string? MedicalCovidSymptoms { get; set; }
         public DateTime? DateNoted { get; set; }
-        public double Temperature { get; set; }
+        [Range(1 , 110)]
+        public double? Temperature { get; set; }
         public bool TakeAnyMedicine { get; set; }
         public string? MedicineName { get; set; }
         public bool DoctorVisit { get; set; }
@@ -20,6 +23,8 @@
         public bool Outforfood { get; set; }
         public string? RiskResult { get; set; }
         public int RiskScore { get; set; }
+        public string GetErrorMessage() =>
+        "Please make sure Temperature is greater than 1 and Date Noted of Symptoms is equal or less than today ";
 
     }
 }

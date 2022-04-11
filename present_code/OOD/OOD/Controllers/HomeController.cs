@@ -263,6 +263,10 @@ namespace OOD.Controllers
                         ViewBag.Message = "Symptoms details added successfully";
                     }
                 }
+                else
+                {
+                    ViewBag.Message = CS.GetErrorMessage();
+                }
 
                 if(CS.RiskScore <= 20)
                 {
