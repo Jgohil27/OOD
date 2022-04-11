@@ -1,0 +1,536 @@
+﻿@{
+    ViewData["Title"] = "Form";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model OOD.Models.FormViewModel;
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>New Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--favicon-->
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+        <!-- ! css Begin-->
+    <link rel="stylesheet" type="text/css" href="../css/dashboard-app/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/dashboard-app/screen.css">
+        <!-- ! css ends -->
+        <!-- ! Custom fonts Begin -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <!-- ! Custom fonts end -->
+        <!-- FontAwsome -->
+    <script src="https://kit.fontawesome.com/5336317b7a.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class="dashboardScreenWrapper d-flex">
+            <div class="mainMenuWrapper mainequalheight">
+                <div class="menuIcon">
+                    <a href="javascript:void(0)"><i class="fas fa-bars"></i></a>
+                </div>
+                <div class="logo">
+                    <a href="/Home/Index" class="fullLogo"><img src="../images/logo-2.png" title="Unblock Insta"></a>
+                    <a href="/Home/Index" class="logoIcon"><img src="../images/logo-icon.png" title="Unblock Insta"></a>
+
+                </div>
+                <div class="menulist">
+                    <ul>
+                        <li>
+                            <a href='/Home/DashBoard'><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href='/Home/Profile'><i class="fas fa-border-all"></i> My Profile</a>
+                        </li>
+                        <li>
+                            <a href='/Home/Form' class="active"><i class="far fa-file"></i> New Form</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contentPart mainequalheight">
+                <div class="header d-flex justify-content-end align-items-center flex-wrap flex-md-nowrap">
+
+
+
+                    <div class="calenderNotification">
+                        <a href="#">
+                            <i class="far fa-bell"></i>
+                            <span class="notificationBtn">10</span>
+                        </a>
+                    </div>
+                    <div class="userProfileicon">
+                        <div class="userIcon coverbg" style="background-image: url('../images/user-img.png')"></div>
+                        <div class="userstatus"></div>
+                    </div>
+                </div>
+                <div class="title">
+                    <h1>New Form</h1>
+                    <h2>Your most recent data</h2>
+                </div>
+                <div class="appContentMain">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="customCard">
+                                <div class="title">
+                                    <h3>Medical Data</h3>
+                                </div>
+                                <form class="profileForm mb-4">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            @*<div class="form-group">*@
+                                            @*<div class="check-box-wrapper">
+                                                <input type="checkbox" class="form-check-input" id="owncovidcheck" onchange="document.getElementById('ownsymptoms').disabled = !this.checked; document.getElementById('dateofsymptom').disabled = !this.checked;">
+                                                <label class="form-check-label" for="owncovidcheck">Do you have any covid symptoms?</label>
+                                                </div>*@
+                                            @*<div class="check-box-wrapper">*@
+                                            @Html.CheckBoxFor(m => m.HaveMedicalSymptoms, new { @class = "form-group", id="HaveMedicalSymptoms" })
+                                            @Html.DisplayName("Do you have any covid symptoms?")
+                                            @*</div>*@
+                                            @* </div>*@
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @*<label>Symptoms Related to Covid</label>
+                                                    <select id="ownsymptoms" disabled>
+                                                    <option>Choose option</option>
+                                                    <option>Fever</option>
+                                                    <option>Cough</option>
+                                                    <option>Fatigue</option>
+                                                    <option>Headache</option>
+                                                    <option>Sore throat</option>
+                                                    <option>Muscle or body aches</option>
+                                                    <option>Shortness of breath or difficulty breathing</option>
+                                                    <option>Other</option>
+                                                    </select>*@
+                                               @Html.DisplayName("Symptoms Related to Covid")
+                                               @Html.DropDownListFor(m=>m.MedicalCovidSymptoms, new List<SelectListItem>
+                                            {
+                                            new SelectListItem{ Text="Fever", Value="Fever"},
+                                            new SelectListItem{ Text="Cough", Value="Cough"},
+                                            new SelectListItem{ Text="Fatigue", Value="Fatigue"},
+                                            new SelectListItem{ Text="Headache", Value="Headache"},
+                                            new SelectListItem{ Text="Sore throat", Value="Sore throat"},
+                                            new SelectListItem{ Text="Muscle or body aches", Value="Muscle or body aches"},
+                                            new SelectListItem{ Text="Shortness of breath or difficulty breathing", Value="Shortness of breath or difficulty breathing"},
+                                            new SelectListItem{ Text="Other", Value="Other"}
+
+                                            }, new { multiple = "multiple", @id="drpMedicalCovidSymptoms" })
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @*<label for="date">Date of symptoms noted</label>
+                                                    <input type="date" class="form-control" id="dateofsymptom" placeholder="" disabled>*@
+
+                                                @Html.DisplayName("Date of symptoms noted")
+                                                @*@Html.LabelFor(m => m.DateNoted, htmlAttributes: new { @class = "col-sm-6 mb-3" })*@
+                                                @Html.EditorFor(m => m.DateNoted, new { htmlAttributes = new { @class = "form-control", id="DateNoted"} })
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @*<label>Temprature (°F)</label>
+                                                    <input type="number" class="form-control" placeholder="" id="temprature">*@
+                                                @Html.DisplayName("Temperature (°F)")
+                                                @Html.TextBoxFor(m => m.Temperature, new { @class = "form-control" })
+                                                @Html.ValidationMessage("Temperature should not be less than 1")
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            @* <div class="form-group">*@
+                                            @* <div class="check-box-wrapper">*@
+                                            @*<input type="checkbox" class="form-check-input" id="medicinecheck"
+                                                onchange="document.getElementById('medicine').disabled = !this.checked; ">
+                                                <label class="form-check-label" for="medicinecheck">Do you take any regular medicine?</label>*@
+                                            @Html.CheckBoxFor(m => m.TakeAnyMedicine, new { @class = "form-group",  id="TakeAnyMedicine" })
+                                            @Html.DisplayName("Do you take any regular medicine?")
+                                            @* </div>*@
+                                            @*</div>*@
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @*<label>Medicine Name</label>
+                                                    <input type="text" class="form-control" placeholder="" id="medicine" disabled>*@
+                                                @Html.DisplayName("Medicine Name")
+                                                @Html.TextBoxFor(m => m.MedicineName, new { @class = "form-control", id="MedicineName"  })
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            @* <div class="form-group">*@
+                                            @* <div class="check-box-wrapper">*@
+                                            @*<input type="checkbox" class="form-check-input" id="doctorvisitcheck"
+                                                onchange="document.getElementById('doctorprofession').disabled = !this.checked; ">
+                                                <label class="form-check-label" for="doctorvisitcheck">Have you visit any doctor in past 10 days?</label>*@
+                                            @Html.CheckBoxFor(m => m.DoctorVisit, new { @class = "form-group", id="DoctorVisit"  })
+                                            @Html.DisplayName("Have you visit any doctor in past 10 days?")
+                                            @*</div>*@
+                                            @*</div>*@
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @*<label>Doctor Profession</label>
+                                                    <select id="doctorprofession" disabled>
+                                                    <option>Choose option</option>
+                                                    <option>Allergists/Immunologists</option>
+                                                    <option>Anesthesiologists</option>
+                                                    <option>Cardiologists</option>
+                                                    <option>Colon and Rectal Surgeons</option>
+                                                    <option>Critical Care Medicine Specialists</option>
+                                                    <option>Dermatologists</option>
+                                                    <option>Endocrinologists</option>
+                                                    <option>Pediatricians</option>
+                                                    <option>Gastroenterologists</option>
+                                                    <option>Geriatric Medicine Specialists</option>
+                                                    <option>Infectious Disease Specialists</option>
+                                                    <option>Other</option>
+                                                    </select>*@
+                                                @Html.DisplayName("Doctor Profession")
+                                                @Html.DropDownListFor(m=>m.DoctorProfession, new List<SelectListItem>
+                                            {
+                                            new SelectListItem{ Text="Allergists", Value = "Allergists" },
+                                            new SelectListItem{ Text="Anesthesiologists", Value = "Anesthesiologists" },
+                                            new SelectListItem{ Text="Cardiologists", Value = "Cardiologists" },
+                                            new SelectListItem{ Text="Colon and Rectal Surgeons", Value = "Colon and Rectal Surgeons" },
+                                            new SelectListItem{ Text="Critical Care Medicine Specialists", Value = "Critical Care Medicine Specialists" },
+                                            new SelectListItem{ Text="Dermatologists", Value = "Dermatologists" },
+                                            new SelectListItem{ Text="Endocrinologists", Value = "Endocrinologists" },
+                                            new SelectListItem{ Text="Pediatricians", Value = "Pediatricians" },
+                                            new SelectListItem{ Text="Gastroenterologists", Value = "Gastroenterologists" },
+                                            new SelectListItem{ Text="Geriatric Medicine Specialists", Value = "Geriatric Medicine Specialists" },
+                                            new SelectListItem{ Text="Infectious Disease Specialists", Value = "Infectious Disease Specialists" },
+                                            new SelectListItem{ Text="Other", Value = "Other" },
+                                            }, new {id="DoctorProfession" })
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <div class="title"></div>
+                                            <div class="title">
+                                                <h3>Interaction</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            @*<div class="form-group">*@
+                                            @* <div class="check-box-wrapper">*@
+                                            @* <input type="checkbox" class="form-check-input" id="metotherscheck"
+                                                onchange="document.getElementById('otherssymptomscheck').disabled = !this.checked; document.getElementById('otherscovidcheck').disabled = !this.checked;">
+                                                <label class="form-check-label" for="metotherscheck">Met any Relative/Friends in past 10 days?</label>*@
+                                            @Html.CheckBoxFor(m => m.HadInteraction, new { @class = "form-group", id="HadInteraction"  })
+                                            @Html.DisplayName("Met any Relative/Friends in past 10 days?")
+                                            @*</div>*@
+                                            @*</div>*@
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <div class="check-box-wrapper">
+                                                    @*<input type="checkbox" class="form-check-input" id="otherssymptomscheck"
+                                                        onchange="document.getElementById('otherssymptoms').disabled = !this.checked; " disabled>
+                                                        <label class="form-check-label" for="otherssymptomscheck">That person had any Covid Symptoms?</label>*@
+                                                    @Html.CheckBoxFor(m => m.HadInteractioCS, new { @class = "form-group", id = "HadInteractioCS" })
+                                                    @Html.DisplayName("That person had any Covid Symptoms?")
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @*<label>Symptoms Related to Covid</label>
+                                                    <select id="otherssymptoms" multiple="multiple" disabled>
+                                                    <option>Choose option</option>
+                                                    <option>Fever</option>
+                                                    <option>Cough</option>
+                                                    <option>Fatigue</option>
+                                                    <option>Headache</option>
+                                                    <option>Sore throat</option>
+                                                    <option>Muscle or body aches</option>
+                                                    <option>Shortness of breath or difficulty breathing</option>
+                                                    <option>Other</option>
+                                                    </select>*@
+                                                @Html.DisplayName("Symptoms Related to Covid")
+                                                @Html.DropDownListFor(m=>m.InteractionCS, new List<SelectListItem>
+                                            {
+                                            new SelectListItem{ Text="Fever", Value="Fever"},
+                                            new SelectListItem{ Text="Cough", Value="Cough"},
+                                            new SelectListItem{ Text="Fatigue", Value="Fatigue"},
+                                            new SelectListItem{ Text="Headache", Value="Headache"},
+                                            new SelectListItem{ Text="Sore throat", Value="Sore throat"},
+                                            new SelectListItem{ Text="Muscle or body aches", Value="Muscle or body aches"},
+                                            new SelectListItem{ Text="Shortness of breath or difficulty breathing", Value="Shortness of breath or difficulty breathing"},
+                                            new SelectListItem{ Text="Other", Value="Other"}
+
+                                            }, new { multiple = "multiple", id="InteractionCS" })
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            @*<div class="form-group">*@
+                                            @*<div class="check-box-wrapper">*@
+                                            @*<input type="checkbox" class="form-check-input" id="otherscovidcheck"
+                                                onchange="document.getElementById('otherscoviddate').disabled = !this.checked;" disabled>
+                                                <label class="form-check-label" for="otherscovidcheck">Is that Person Covid Positive?</label>*@
+                                            @Html.CheckBoxFor(m => m.isIPersonPostive, new { @class = "form-group", id = "isIPersonPostive" })
+                                            @Html.DisplayName("Is that Person Covid Positive?")
+                                            @*</div>*@
+                                            @*</div>*@
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @*<label>Date noted for COVID positive</label>
+                                                    <input type="date" class="form-control" placeholder="" id="otherscoviddate" disabled>*@
+                                                @Html.DisplayName("Date noted for COVID positive")
+                                                @*@Html.LabelFor(m => m.CovidDatetime, htmlAttributes: new { @class = "col-sm-6 mb-3" })*@
+                                                @Html.EditorFor(m => m.CovidDatetime, new { htmlAttributes = new { @class = "form-control", id = "CovidDatetime"} })
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <div class="title"></div>
+                                            <div class="title">
+                                                <h3>Outings</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            @* <div class="form-group">*@
+                                            @* <div class="check-box-wrapper">*@
+                                            @*<input type="checkbox" class="form-check-input" id="travelcheck"
+                                                onchange="document.getElementById('travelstate').disabled = !this.checked;">
+                                                <label class="form-check-label" for="travelcheck">Had Travel history of 10 days?</label>*@
+                                            @Html.CheckBoxFor(m => m.HadOutings, new { @class = "form-group", id="HadOutings" })
+                                            @Html.DisplayName("Had Travel history of 10 days?")
+                                            @*  </div>*@
+                                            @* </div>*@
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @*<label>Symptoms Related to Covid</label>
+                                                    <select id="travelstate" disabled>
+                                                    <option value="AL">Alabama</option>
+                                                    <option value="AK">Alaska</option>
+                                                    <option value="AZ">Arizona</option>
+                                                    <option value="AR">Arkansas</option>
+                                                    <option value="CA">California</option>
+                                                    <option value="CO">Colorado</option>
+                                                    <option value="CT">Connecticut</option>
+                                                    <option value="DE">Delaware</option>
+                                                    <option value="DC">District Of Columbia</option>
+                                                    <option value="FL">Florida</option>
+                                                    <option value="GA">Georgia</option>
+                                                    <option value="HI">Hawaii</option>
+                                                    <option value="ID">Idaho</option>
+                                                    <option value="IL">Illinois</option>
+                                                    <option value="IN">Indiana</option>
+                                                    <option value="IA">Iowa</option>
+                                                    <option value="KS">Kansas</option>
+                                                    <option value="KY">Kentucky</option>
+                                                    <option value="LA">Louisiana</option>
+                                                    <option value="ME">Maine</option>
+                                                    <option value="MD">Maryland</option>
+                                                    <option value="MA">Massachusetts</option>
+                                                    <option value="MI">Michigan</option>
+                                                    <option value="MN">Minnesota</option>
+                                                    <option value="MS">Mississippi</option>
+                                                    <option value="MO">Missouri</option>
+                                                    <option value="MT">Montana</option>
+                                                    <option value="NE">Nebraska</option>
+                                                    <option value="NV">Nevada</option>
+                                                    <option value="NH">New Hampshire</option>
+                                                    <option value="NJ">New Jersey</option>
+                                                    <option value="NM">New Mexico</option>
+                                                    <option value="NY">New York</option>
+                                                    <option value="NC">North Carolina</option>
+                                                    <option value="ND">North Dakota</option>
+                                                    <option value="OH">Ohio</option>
+                                                    <option value="OK">Oklahoma</option>
+                                                    <option value="OR">Oregon</option>
+                                                    <option value="PA">Pennsylvania</option>
+                                                    <option value="RI">Rhode Island</option>
+                                                    <option value="SC">South Carolina</option>
+                                                    <option value="SD">South Dakota</option>
+                                                    <option value="TN">Tennessee</option>
+                                                    <option value="TX">Texas</option>
+                                                    <option value="UT">Utah</option>
+                                                    <option value="VT">Vermont</option>
+                                                    <option value="VA">Virginia</option>
+                                                    <option value="WA">Washington</option>
+                                                    <option value="WV">West Virginia</option>
+                                                    <option value="WI">Wisconsin</option>
+                                                    <option value="WY">Wyoming</option>
+                                                    </select>*@
+                                                @Html.DisplayName("Travel Place")
+                                                @Html.DropDownListFor(m => m.OutingCS,new List<SelectListItem>
+                                            {
+                                            new SelectListItem{ Value="AL", Text="Alabama"},
+                                            new SelectListItem{ Value="AL", Text="Alabama"},
+                                            new SelectListItem{ Value="AK", Text="Alaska"},
+                                            new SelectListItem{ Value="AZ", Text="Arizona"},
+                                            new SelectListItem{ Value="AR", Text="Arkansas"},
+                                            new SelectListItem{ Value="CA", Text="California"},
+                                            new SelectListItem{ Value="CO", Text="Colorado"},
+                                            new SelectListItem{ Value="CT", Text="Connecticut"},
+                                            new SelectListItem{ Value="DE", Text="Delaware"},
+                                            new SelectListItem{ Value="DC", Text="District Of Columbia"},
+                                            new SelectListItem{ Value="FL", Text="Florida"},
+                                            new SelectListItem{ Value="GA", Text="Georgia"},
+                                            new SelectListItem{ Value="HI", Text="Hawaii"},
+                                            new SelectListItem{ Value="ID", Text="Idaho"},
+                                            new SelectListItem{ Value="IL", Text="Illinois"},
+                                            new SelectListItem{ Value="IN", Text="Indiana"},
+                                            new SelectListItem{ Value="IA", Text="Iowa"},
+                                            new SelectListItem{ Value="KS", Text="Kansas"},
+                                            new SelectListItem{ Value="KY", Text="Kentucky"},
+                                            new SelectListItem{ Value="LA", Text="Louisiana"},
+                                            new SelectListItem{ Value="ME", Text="Maine"},
+                                            new SelectListItem{ Value="MD", Text="Maryland"},
+                                            new SelectListItem{ Value="MA", Text="Massachusetts"},
+                                            new SelectListItem{ Value="MI", Text="Michigan"},
+                                            new SelectListItem{ Value="MN", Text="Minnesota"},
+                                            new SelectListItem{ Value="MS", Text="Mississippi"},
+                                            new SelectListItem{ Value="MO", Text="Missouri"},
+                                            new SelectListItem{ Value="MT", Text="Montana"},
+                                            new SelectListItem{ Value="NE", Text="Nebraska"},
+                                            new SelectListItem{ Value="NV", Text="Nevada"},
+                                            new SelectListItem{ Value="NH", Text="New Hampshire"},
+                                            new SelectListItem{ Value="NJ", Text="New Jersey"},
+                                            new SelectListItem{ Value="NM", Text="New Mexico"},
+                                            new SelectListItem{ Value="NY", Text="New York"},
+                                            new SelectListItem{ Value="NC", Text="North Carolina"},
+                                            new SelectListItem{ Value="ND", Text="North Dakota"},
+                                            new SelectListItem{ Value="OH", Text="Ohio"},
+                                            new SelectListItem{ Value="OK", Text="Oklahoma"},
+                                            new SelectListItem{ Value="OR", Text="Oregon"},
+                                            new SelectListItem{ Value="PA", Text="Pennsylvania"},
+                                            new SelectListItem{ Value="RI", Text="Rhode Island"},
+                                            new SelectListItem{ Value="SC", Text="South Carolina"},
+                                            new SelectListItem{ Value="SD", Text="South Dakota"},
+                                            new SelectListItem{ Value="TN", Text="Tennessee"},
+                                            new SelectListItem{ Value="TX", Text="Texas"},
+                                            new SelectListItem{ Value="UT", Text="Utah"},
+                                            new SelectListItem{ Value="VT", Text="Vermont"},
+                                            new SelectListItem{ Value="VA", Text="Virginia"},
+                                            new SelectListItem{ Value="WA", Text="Washington"},
+                                            new SelectListItem{ Value="WV", Text="West Virginia"},
+                                            new SelectListItem{ Value="WI", Text="Wisconsin"},
+                                            new SelectListItem{ Value="WY", Text="Wyoming"}
+
+                                            }, new {id="OutingCS"})
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            @*<div class="form-group">*@
+                                            @*  <div class="check-box-wrapper">*@
+                                            @*<input type="checkbox" class="form-check-input" id="exampleCheck8">
+                                                <label class="form-check-label" for="exampleCheck8">Out for food in past 10 days?</label>*@
+                                            @Html.CheckBoxFor(m => m.Outforfood, new { @class = "form-group" })
+                                            @Html.DisplayName("Out for food in past 10 days?")
+                                            @* </div>*@
+                                            @*</div>*@
+                                        </div>
+                                        <div class="col-sm-12 align-self-end text-md-right">
+                                            <button type="submit" class="buttonDark">Submit</button>
+                                        </div>
+                                    </div>
+
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ! Script Begin -->
+    <script src="../js/jquery-2.2.4.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/function.js"></script>
+        <script src="../js/global.js"></script>
+        <!-- ! Script ends -->
+
+    <script type="text/javascript">
+        $( document ).ready(function() {
+              $('#drpMedicalCovidSymptoms').attr('disabled', 'disabled');
+              $('#DateNoted').attr('disabled', 'disabled');
+              $('#MedicineName').attr('disabled', 'disabled');
+              $('#DoctorProfession').attr('disabled', 'disabled');
+              $('#HadInteractioCS').attr('disabled', 'disabled');
+              $('#isIPersonPostive').attr('disabled', 'disabled');
+              $('#InteractionCS').attr('disabled', 'disabled');
+              $('#CovidDatetime').attr('disabled', 'disabled');
+              $('#OutingCS').attr('disabled', 'disabled');
+        });
+
+        $('#HaveMedicalSymptoms').change(function() {
+             if ($("#HaveMedicalSymptoms").is(':checked')) {
+                $('#drpMedicalCovidSymptoms').removeAttr('disabled');
+                $('#DateNoted').removeAttr('disabled');
+            } else {
+                $('#drpMedicalCovidSymptoms').attr('disabled', 'disabled');
+                $('#DateNoted').attr('disabled', 'disabled');
+            }    
+        });
+
+        $('#TakeAnyMedicine').change(function() {
+             if ($("#TakeAnyMedicine").is(':checked')) {
+                $('#MedicineName').removeAttr('disabled');
+            } else {
+                $('#MedicineName').attr('disabled', 'disabled');
+            }    
+        });
+
+        $('#DoctorVisit').change(function() {
+             if ($("#DoctorVisit").is(':checked')) {
+                $('#DoctorProfession').removeAttr('disabled');
+            } else {
+                $('#DoctorProfession').attr('disabled', 'disabled');
+            }    
+        });
+
+        $('#HadInteraction').change(function() {
+             if ($("#HadInteraction").is(':checked')) {
+                $('#HadInteractioCS').removeAttr('disabled');
+                $('#isIPersonPostive').removeAttr('disabled');
+            } else {
+                $('#HadInteractioCS').attr('disabled', 'disabled');
+                $('#isIPersonPostive').attr('disabled', 'disabled');
+            }    
+        });
+
+        $('#HadInteractioCS').change(function() {
+             if ($("#HadInteractioCS").is(':checked')) {
+                $('#InteractionCS').removeAttr('disabled');
+            } else {
+                $('#InteractionCS').attr('disabled', 'disabled');
+            }    
+        });
+
+        $('#isIPersonPostive').change(function() {
+             if ($("#isIPersonPostive").is(':checked')) {
+                $('#CovidDatetime').removeAttr('disabled');
+            } else {
+                $('#CovidDatetime').attr('disabled', 'disabled');
+            }    
+        });
+
+        $('#HadOutings').change(function() {
+             if ($("#HadOutings").is(':checked')) {
+                $('#OutingCS').removeAttr('disabled');
+            } else {
+                $('#OutingCS').attr('disabled', 'disabled');
+            }    
+        });
+
+    </script>
+    </body>
+    </html>
+}
+

@@ -1,0 +1,509 @@
+﻿++Solution 'OOD' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:OOD.sln
+++OOD
+i:{00000000-0000-0000-0000-000000000000}:OOD
+++Connected Services 
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:>1269
+++Dependencies
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:>1268
+++Properties
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\properties\
+++wwwroot
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\
+++css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\css\
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\css\
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\
+++images
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\
+++js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\js\
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\js\
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\
+++favicon.ico
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\favicon.ico
+++Areas
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\areas\
+++Controllers
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\controllers\
+++HomeController.cs
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\controllers\homecontroller.cs
+++Migrations
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\migrations\
+++Models
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\models\
+++ContactUs.cs
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\models\contactus.cs
+++ErrorViewModel.cs
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\models\errorviewmodel.cs
+++Views
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\
+++Home
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\home\
+++ContactUs.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\home\contactus.cshtml
+++CovidHighRisk.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\home\covidhighrisk.cshtml
+++CovidLowRisk.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\home\covidlowrisk.cshtml
+++CovidMediumRisk.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\home\covidmediumrisk.cshtml
+++DashBoard.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\home\dashboard.cshtml
+++Form.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\home\form.cshtml
+++Index.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\home\index.cshtml
+++Privacy.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\home\privacy.cshtml
+++Profile.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\home\profile.cshtml
+++Shared
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\shared\
+++_Layout.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\shared\_layout.cshtml
+++_LoginPartial.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\shared\_loginpartial.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\shared\_validationscriptspartial.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\areas\identity\pages\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\shared\error.cshtml
+++_ViewImports.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\_viewimports.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\areas\identity\pages\_viewimports.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\areas\identity\pages\account\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\_viewstart.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\areas\identity\pages\_viewstart.cshtml
+++appsettings.json
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\appsettings.json
+++Program.cs
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\program.cs
+++ScaffoldingReadMe.txt
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\scaffoldingreadme.txt
+++SQL Server Express LocalDB (Local) (ConnectionStrings:DBContextConnection)
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:>1297
+++Analyzers
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:analyzers
+++Frameworks
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:frameworks
+++Packages
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:packages
+++launchSettings.json
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\properties\launchsettings.json
+++serviceDependencies.json
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\properties\servicedependencies.json
+++dashboard-app
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\css\dashboard-app\
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\js\dashboard-app\
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\css\dashboard-app\
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\js\dashboard-app\
+++bootstrap.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\css\bootstrap.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\css\bootstrap.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\css\dashboard-app\bootstrap.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\css\dashboard-app\bootstrap.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++owl.carousel.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\css\owl.carousel.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\css\owl.carousel.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\css\dashboard-app\owl.carousel.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\css\dashboard-app\owl.carousel.min.css
+++screen.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\css\screen.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\css\screen.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\css\dashboard-app\screen.css
+++site.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\css\site.css
+++service-icon
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\service-icon\
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\service-icon\
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\service-icon\
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\service-icon\
+++about-img-shape.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\about-img-shape.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\about-img-shape.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\about-img-shape.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\about-img-shape.png
+++about-screen.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\about-screen.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\about-screen.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\about-screen.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\about-screen.png
+++app-screen.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\app-screen.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\app-screen.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\app-screen.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\app-screen.png
+++banner-img-shape.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\banner-img-shape.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\banner-img-shape.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\banner-img-shape.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\banner-img-shape.png
+++client.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\client.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\client.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\client.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\client.png
+++easy-stap-icon.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\easy-stap-icon.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\easy-stap-icon.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\easy-stap-icon.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\easy-stap-icon.png
+++fav.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\fav.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\fav.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\fav.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\fav.png
+++login-background.jpg
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\login-background.jpg
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\login-background.jpg
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\login-background.jpg
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\login-background.jpg
+++logo.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\logo.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\logo.png
+++logo-1.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\logo-1.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\logo-1.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\logo-1.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\logo-1.png
+++logo-2.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\logo-2.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\logo-2.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\logo-2.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\logo-2.png
+++logo-white.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\logo-white.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\logo-white.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\logo-white.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\logo-white.png
+++stars.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\stars.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\stars.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\stars.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\stars.png
+++top-btn.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\top-btn.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\top-btn.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\top-btn.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\top-btn.png
+++user-img - Copy.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\user-img - copy.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\user-img - copy.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\user-img - copy.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\user-img - copy.png
+++user-img.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\user-img.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\user-img.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\user-img.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\user-img.png
+++video-banner.jpg
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\video-banner.jpg
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\video-banner.jpg
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\video-banner.jpg
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\video-banner.jpg
+++video-btn.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\video-btn.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\video-btn.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\video-btn.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\video-btn.png
+++video-btn-.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\video-btn-.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\video-btn-.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\video-btn-.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\video-btn-.png
+++video-btn-shape.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\video-btn-shape.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\video-btn-shape.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\video-btn-shape.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\video-btn-shape.png
+++bootstrap.bundle.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\js\bootstrap.bundle.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\js\bootstrap.bundle.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\js\dashboard-app\bootstrap.bundle.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\js\dashboard-app\bootstrap.bundle.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++function.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\js\function.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\js\function.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\js\dashboard-app\function.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\js\dashboard-app\function.js
+++global.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\js\global.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\js\global.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\js\dashboard-app\global.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\js\dashboard-app\global.js
+++jquery-2.2.4.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\js\jquery-2.2.4.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\js\jquery-2.2.4.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\js\dashboard-app\jquery-2.2.4.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\js\dashboard-app\jquery-2.2.4.min.js
+++owl.carousel.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\js\owl.carousel.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\js\owl.carousel.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\js\dashboard-app\owl.carousel.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\js\dashboard-app\owl.carousel.min.js
+++site.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\js\site.js
+++bootstrap
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\
+++jquery
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery\
+++jquery-validation
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery-validation-unobtrusive\
+++Identity
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\areas\identity\
+++dashbord-bootstrap.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\css\dashbord-bootstrap.min.css
+++dashbord-owl.carousel.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\css\dashbord-owl.carousel.min.css
+++dashbord-screen.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\css\dashbord-screen.css
+++logo-icon.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\logo-icon.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\logo-icon.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\logo-icon.png
+++20220402083114_Initial-Create.cs
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\migrations\20220402083114_initial-create.cs
+++DBContextModelSnapshot.cs
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\migrations\dbcontextmodelsnapshot.cs
+++_Layout.cshtml.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\views\shared\_layout.cshtml.css
+++appsettings.Development.json
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\appsettings.development.json
+++MessagePackAnalyzer
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\users\kalya\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
+++Microsoft.AspNetCore.Analyzers
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\users\kalya\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\users\kalya\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\users\kalya\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.2\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\microsoft.netcore.app
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.2)
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:>1292
+++Microsoft.AspNetCore.Identity.UI (6.0.2)
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:>1296
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.2)
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:>1291
+++Microsoft.EntityFrameworkCore.Tools (6.0.2)
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:>1294
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.2)
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:>1295
+++System.Data.SqlClient (4.8.3)
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:>1293
+++serviceDependencies.local.json
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\properties\servicedependencies.local.json
+++services-1.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\service-icon\services-1.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\service-icon\services-1.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\service-icon\services-1.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\service-icon\services-1.png
+++services-2.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\service-icon\services-2.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\service-icon\services-2.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\service-icon\services-2.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\service-icon\services-2.png
+++services-3.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\service-icon\services-3.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\service-icon\services-3.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\service-icon\services-3.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\service-icon\services-3.png
+++services-4.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\service-icon\services-4.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\service-icon\services-4.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\service-icon\services-4.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\service-icon\services-4.png
+++services-5.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\service-icon\services-5.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\service-icon\services-5.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\service-icon\services-5.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\service-icon\services-5.png
+++services-6.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\service-icon\services-6.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\service-icon\services-6.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\service-icon\services-6.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\service-icon\services-6.png
+++services-6-.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\service-icon\services-6-.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\service-icon\services-6-.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\service-icon\services-6-.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\service-icon\services-6-.png
+++services-icon-background.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\service-icon\services-icon-background.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\service-icon\services-icon-background.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\images\dashboard-app\service-icon\services-icon-background.png
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\images\dashboard-app\service-icon\services-icon-background.png
+++dist
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery\dist\
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery\license.txt
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++Data
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\areas\identity\data\
+++Pages
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\areas\identity\pages\
+++screen1.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\css\dashboard-app\screen1.css
+++20220402083114_Initial-Create.Designer.cs
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\migrations\20220402083114_initial-create.designer.cs
+++jquery.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++ApplicationUser.cs
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\areas\identity\data\applicationuser.cs
+++DBContext.cs
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\areas\identity\data\dbcontext.cs
+++Account
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\areas\identity\pages\account\
+++bootstrap.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-utilities.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++jquery.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery\dist\jquery.min.js
+++additional-methods.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++_AuthLayout.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\areas\identity\pages\account\_authlayout.cshtml
+++Login.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\areas\identity\pages\account\login.cshtml
+++Register.cshtml
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\areas\identity\pages\account\register.cshtml
+++bootstrap.css.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.rtl.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap-grid.css.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.rtl.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-reboot.css.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.rtl.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-utilities.css.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.rtl.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap.bundle.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.esm.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.js.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++jquery.min.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\jquery\dist\jquery.min.map
+++Login.cshtml.cs
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\areas\identity\pages\account\login.cshtml.cs
+++Register.cshtml.cs
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\areas\identity\pages\account\register.cshtml.cs
+++bootstrap.min.css.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.rtl.css.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap-grid.min.css.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-reboot.min.css.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-utilities.min.css.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap.bundle.js.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.esm.js.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.min.js.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++bootstrap.rtl.min.css.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.rtl.min.css.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.rtl.min.css.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.rtl.min.css.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.min.js.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.min.js.map
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++web.config
+i:{aa35624e-d38d-464b-9c6f-c04e7547b477}:c:\new_grad\spring_sem\ood\ood project jainee\git\ood\present_code\ood\ood\web.config
