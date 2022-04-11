@@ -1,13 +1,20 @@
 This folder contains all the required files,ppt,UML,etc. to this Covid Dashboard
 
+Glance of all folders and its content.
+Code -> Actual code of project
+Database -> Required schema for project and steps to follow to steup project in any environment
+Diagrams -> Contains UML diagrams which were created at the initial stage of project
+Final Presentation -> Contains Demo of final develoepd project and PPT link 
+Html -> Initial project layout design
+
+
 Project Requirements:
+  Tools:
+  Microsoft SQL Server
+  Microsoft Visual Studio
 
-Tools:
-Microsoft SQL Server
-Microsoft Visual Studio
-
-Browser:
-Any (Chrome, Firefox, Microsoft Edge)
+  Browser:
+  Any (Chrome, Firefox, Microsoft Edge)
 
 Language Used:
 C# - Backend, For database connectivity
