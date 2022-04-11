@@ -44,5 +44,8 @@ CREATE TABLE ContactUs (
 	CovidDatetime datetime , 
 	HadOutings bit , 
 	OutingCS varchar(255) ,
-	RiskCalculatedDate datetime 
+	RiskCalculatedDate datetime,
+	HadVaccine bit , 
+   	VaccineDose int ,
+   	VaccineName varchar(100)
 );
