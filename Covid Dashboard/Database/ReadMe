@@ -1,15 +1,16 @@
 This folder contains all the DB schema.
 
+Steps to setup the project in your environment:
 
-Steps:
-In your system you should have MS SQL Server.
-Then create a DataBase with name "<CovidDB>".
+Install MS SQL Server (if it's not already)
+Install MS VS Studio (if it's not already)
+
+Then create a DataBase with name "CovidDB" in MS SQL Server
 Run the scipts in below order.
-"table.sql"
-"stored_procedure.sql"
+1) "table.sql"
+2) "stored_procedure.sql"
 
 After done with all above steps, Make below changes in code.
-
 In Controller/HomeController.cs 
 at line 30 change SERVERNAME as per your sql server name
 string Connection = "Server=SERVERNAME\\sqlexpress;Database=CovidDB;Trusted_Connection=True;MultipleActiveResultSets=true";
