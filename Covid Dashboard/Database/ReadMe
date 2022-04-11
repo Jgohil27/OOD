@@ -3,10 +3,14 @@ This folder contains all the DB schema.
 
 Steps:
 In your system you should have MS SQL Server.
-Then create a DataBase with name "<add Database name>".
+Then create a DataBase with name "<CovidDB>".
 Run the scipts in below order.
 "table.sql"
 "stored_procedure.sql"
 
 After done with all above steps, Make below changes in code.
-<add code file name here and what changes are required>
+
+In Controller/HomeController.cs 
+at line 30 change SERVERNAME as per your sql server name
+string Connection = "Server=SERVERNAME\\sqlexpress;Database=CovidDB;Trusted_Connection=True;MultipleActiveResultSets=true";
+

@@ -10044,11 +10044,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\new_grad\\spring_sem\\ood\\ood project jainee\\git\\OOD\\present_code\\OOD\\OOD\\OOD.csproj",
+      "projectUniqueName": "C:\\new_grad\\spring_sem\\ood\\ood project jainee\\git\\OOD\\Covid Dashboard\\Code\\OOD\\OOD\\OOD.csproj",
       "projectName": "OOD",
-      "projectPath": "C:\\new_grad\\spring_sem\\ood\\ood project jainee\\git\\OOD\\present_code\\OOD\\OOD\\OOD.csproj",
+      "projectPath": "C:\\new_grad\\spring_sem\\ood\\ood project jainee\\git\\OOD\\Covid Dashboard\\Code\\OOD\\OOD\\OOD.csproj",
       "packagesPath": "C:\\Users\\kalya\\.nuget\\packages\\",
-      "outputPath": "C:\\new_grad\\spring_sem\\ood\\ood project jainee\\git\\OOD\\present_code\\OOD\\OOD\\obj\\",
+      "outputPath": "C:\\new_grad\\spring_sem\\ood\\ood project jainee\\git\\OOD\\Covid Dashboard\\Code\\OOD\\OOD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
