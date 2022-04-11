@@ -28,8 +28,6 @@ namespace OOD.Controllers
         private void Connection()
         {
             string Connection = "Server=KALYAN\\sqlexpress;Database=CovidDB;Trusted_Connection=True;MultipleActiveResultSets=true";
-            //string test = System.Configuration.ConfigurationManager.ConnectionStrings["Test2"].ToString();
-            //string constr = System.Configuration.ConfigurationManager.ConnectionStrings["CovidConnection"].ConnectionString;
             con = new SqlConnection(Connection);
         }
 
@@ -52,7 +50,6 @@ namespace OOD.Controllers
             ViewBag.LastName = CS.LastName;
             ViewBag.PhoneNumber = CS.PhoneNumber;
             ViewBag.EmailAddress = CS.EmailAddress;
-            // ViewBag.DOB = "08/"
             ViewBag.State = "Virgina";
             return View(CS);
         }
@@ -130,7 +127,6 @@ namespace OOD.Controllers
         }
 
         [Authorize]
-        //[HttpGet]
         public IActionResult Profile(ProfileViewModel CS)
         {
             if(ModelState.IsValid)
@@ -151,10 +147,6 @@ namespace OOD.Controllers
         [ActionName("Profile")]
         public IActionResult UpdateProfile(ProfileViewModel CS)
         {
-            //CS.LastName = LastName;
-            //CS.FirstName = FirstName ;
-            //CS.EmailAddress = EmailId ;
-            //CS.PhoneNumber = PhoneNumber;
             if (ModelState.IsValid)
             {
                 if (AddUpdatedProfile(CS))
@@ -197,7 +189,6 @@ namespace OOD.Controllers
                 CommandType = CommandType.StoredProcedure
             };
             com.Parameters.AddWithValue("@EmailId", "rihan@gmail.com");
-            //com.Parameters.AddWithValue("@EmailId", ApplicationUser.);
             com.Parameters.Add("@FirstName",SqlDbType.VarChar, 50);
             com.Parameters.Add("@LastName", SqlDbType.VarChar, 50);
             com.Parameters.Add("@Email", SqlDbType.VarChar, 50);
@@ -212,9 +203,7 @@ namespace OOD.Controllers
             CS.LastName = com.Parameters["@LastName"].Value.ToString();
             CS.EmailAddress = com.Parameters["@Email"].Value.ToString();
             CS.PhoneNumber = Convert.IsDBNull(com.Parameters["@PhoneNumber"].Value)? null:(int ?)com.Parameters["@PhoneNumber"].Value;
-          //  Convert.IsDBNull(reader["AcceptanceActID"]) ? null : (int?)reader["AcceptanceActID"],
             ViewBag.FirstName = CS.FirstName;
-            // var o = com.();
             con.Close();
             if (i >= 1)
             {
@@ -222,11 +211,8 @@ namespace OOD.Controllers
             }
             else
             {
-
                 return false;
-            }
-           
-
+            }  
         }
 
         public IActionResult ForgotPassword()
