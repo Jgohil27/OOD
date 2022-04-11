@@ -5,10 +5,8 @@ Steps:
 In your system you should have MS SQL Server.
 Then create a DataBase with name "<add Database name>".
 Run the scipts in below order.
-<Add table sequences>
-
-Run the Stored Procedures in below order.
-<add stored procedures sequence>
+"table.sql"
+"stored_procedure.sql"
 
 After done with all above steps, Make below changes in code.
 <add code file name here and what changes are required>
