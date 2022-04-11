@@ -255,7 +255,9 @@ namespace OOD.Controllers
                     CS.RiskScore = CS.isIPersonPostive ? CS.RiskScore + 30 : CS.RiskScore;
                     CS.RiskScore = CS.HadOutings ? CS.RiskScore + 5 : CS.RiskScore;
                     CS.RiskScore = CS.Outforfood ? CS.RiskScore + 5 : CS.RiskScore;
-
+                    CS.RiskScore = (CS.HadVaccine && CS.VaccineDose == 1 ) ? CS.RiskScore - 5 : CS.RiskScore;
+                    CS.RiskScore = (CS.HadVaccine && CS.VaccineDose == 2) ? CS.RiskScore - 10 : CS.RiskScore;
+                    CS.RiskScore = (CS.HadVaccine && CS.VaccineDose == 3) ? CS.RiskScore - 15 : CS.RiskScore;
                     CS.RiskResult = CS.RiskScore <= 20 ? "Low" : CS.RiskScore >= 50 ? "High" : "Medium";
 
                     if (AddSymptoms(CS))
@@ -314,6 +316,9 @@ namespace OOD.Controllers
             com.Parameters.AddWithValue("@MedicineName", CS.MedicineName == null ? "-" : CS.MedicineName);
             com.Parameters.AddWithValue("@DoctorVisit", CS.DoctorVisit);
             com.Parameters.AddWithValue("@DoctorProfession", CS.DoctorProfession == null ? "-" : CS.DoctorProfession);
+            com.Parameters.AddWithValue("@HadVaccine", CS.HadVaccine);
+            com.Parameters.AddWithValue("@VaccineDose", CS.VaccineDose == null ? "-" : CS.VaccineDose);
+            com.Parameters.AddWithValue("@VaccineName", CS.VaccineName == null ? "-" : CS.VaccineName);
             com.Parameters.AddWithValue("@HadInteraction", CS.HadInteraction);
             com.Parameters.AddWithValue("@HadInteractioCS", CS.HadInteractioCS);
             com.Parameters.AddWithValue("@InteractionCS", CS.InteractionCS == null ? "-" : CS.InteractionCS);

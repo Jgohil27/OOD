@@ -215,6 +215,43 @@
                                         <div class="col-sm-12">
                                             <div class="title"></div>
                                             <div class="title">
+                                                <h3>Vaccine</h3>
+                                            </div>
+                                        </div>
+                                          <div class="col-12">
+                                            @Html.CheckBoxFor(m => m.HadVaccine, new { @class = "form-group", id="hadvaccine" })
+                                            @Html.DisplayName("Do you had covid vaccine?")
+                                            @*</div>*@
+                                            @* </div>*@
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                               @Html.DisplayName("How Many Vaccine Dose you took?")
+                                               @Html.DropDownListFor(m=>m.VaccineDose, new List<SelectListItem>
+                                            {
+                                            new SelectListItem{ Text="1 Dose", Value="1"},
+                                            new SelectListItem{ Text="2 Dose", Value="2"},
+                                            new SelectListItem{ Text="2 Dose and Booster", Value="3"},                                          
+
+                                            }, new { @id="vaccinedose" })
+                                            </div>
+                                        </div>
+                                         <div class="col-sm-6">
+                                            <div class="form-group">
+                                               @Html.DisplayName("Which Vaccine you took?")
+                                               @Html.DropDownListFor(m=>m.VaccineName, new List<SelectListItem>
+                                            {
+                                            new SelectListItem{ Text="Pfizer", Value="Pfizer"},
+                                            new SelectListItem{ Text="Moderna", Value="Moderna"},
+                                            new SelectListItem{ Text="Jhonson & Jhonson", Value="Jhonson & Jhonson"},                                          
+
+                                            }, new { @id="vaccinename" })
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <div class="title"></div>
+                                            <div class="title">
                                                 <h3>Interaction</h3>
                                             </div>
                                         </div>
@@ -467,6 +504,8 @@
               $('#InteractionCS').attr('disabled', 'disabled');
               $('#CovidDatetime').attr('disabled', 'disabled');
               $('#OutingCS').attr('disabled', 'disabled');
+              $('#vaccinename').attr('disabled', 'disabled');
+              $('#vaccinedose').attr('disabled', 'disabled');
         });
 
         $('#HaveMedicalSymptoms').change(function() {
@@ -492,6 +531,16 @@
                 $('#DoctorProfession').removeAttr('disabled');
             } else {
                 $('#DoctorProfession').attr('disabled', 'disabled');
+            }    
+        });
+
+         $('#hadvaccine').change(function() {
+             if ($("#hadvaccine").is(':checked')) {
+                $('#vaccinename').removeAttr('disabled');
+                $('#vaccinedose').removeAttr('disabled');
+            } else {
+                $('#vaccinename').attr('disabled', 'disabled');
+                $('#vaccinedose').attr('disabled', 'disabled');
             }    
         });
 
